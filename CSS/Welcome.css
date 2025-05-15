@@ -1,0 +1,279 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+/* Global Styles */
+*, .main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+/* Main Container */
+.main-container {
+    position: relative;
+    width: 1280px;
+    height: 832px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Box Section */
+.box {
+    position: relative;
+    width: 1189px;
+    height: 700px;
+    padding: 0 0 20px 0;
+    margin: 10px 0 0 45px;
+    font-size: 0px;
+    border: 2px dashed #000000;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/* Header Text */
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 1073px;
+    height: 55px;
+    margin: 0 0 0 59px;
+    color: #000000;
+    font-family: Days One, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.text-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 1073px;
+    height: 31px;
+    margin: 33px 0 0 59px;
+    color: #000000;
+    font-family: Days One, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.996px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+/* Icon Section */
+.wrapper {
+    position: relative;
+    width: 735px;
+    height: 81px;
+    margin: 117px 0 0 221px;
+    z-index: 15;
+}
+
+.pic {
+    position: absolute;
+    width: 89.258px;
+    height: 81px;
+    top: 0;
+    left: 341px;
+    background: url(/Assets/images/plan.svg) no-repeat center;
+    background-size: cover;
+    z-index: 11;
+}
+
+.img {
+    position: absolute;
+    width: 46px;
+    height: 81px;
+    top: 0;
+    left: 689px;
+    background: url(/Assets/images/estimatedPricing.svg) no-repeat center;
+    background-size: cover;
+    z-index: 15;
+}
+
+.pic-2 {
+    position: absolute;
+    width: 97px;
+    height: 70px;
+    top: 11px;
+    left: 0;
+    background: url(/Assets/images/audience.svg) no-repeat center;
+    background-size: cover;
+    z-index: 6;
+}
+
+/* Features Section */
+.wrapper-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 846px;
+    height: 60px;
+    margin: 42px 0 0 174px;
+    z-index: 16;
+}
+
+.text-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 192px;
+    height: 60px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    z-index: 7;
+}
+
+.text-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 172px;
+    height: 60px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    z-index: 12;
+}
+
+.text-5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 174px;
+    height: 60px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    z-index: 16;
+}
+
+/* Details Section */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 873px;
+    height: 50px;
+    margin: 27px 0 0 159px;
+    z-index: 14;
+}
+
+.text-6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 221px;
+    height: 50px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    z-index: 8;
+}
+
+.text-7 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 198px;
+    height: 50px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    z-index: 10;
+}
+
+.text-8 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 198px;
+    height: 50px;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    z-index: 14;
+}
+
+/* Call-to-Action Section */
+.wrapper-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 255px;
+    height: 65px;
+    margin: 117px 0 0 468px;
+    background: #dc393c;
+    z-index: 19;
+    border-radius: 10px;
+}
+
+.text-9 {
+    flex-shrink: 0;
+    position: relative;
+    height: 29px;
+    color: #ffffff;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 19;
+}

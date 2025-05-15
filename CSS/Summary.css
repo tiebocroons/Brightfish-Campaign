@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
@@ -5,47 +6,53 @@
         "Source Han Sans CN", sans-serif;
 }
 
-.main-container {
-    overflow: hidden;
+/* Global Styles */
+*, .main-container {
+    overflow: hidden; /* Prevents content overflow */
 }
 
 .main-container,
 .main-container * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures consistent box model */
 }
 
 input,
 select,
 textarea,
 button {
-    outline: 0;
+    outline: 0; /* Removes default outline */
 }
 
+/* Main Container */
 .main-container {
     position: relative;
     width: 1280px;
     height: 832px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #ffffff; /* White background */
     overflow: hidden;
 }
+
+/* Box Section */
 .box {
     position: relative;
     width: 1073px;
     height: 682px;
-    margin: 70px 0 0 94px;
-    background: #f9fafb;
+    margin: 30px 0 0 94px;
+    background: #f9fafb; /* Light gray background */
     z-index: 1;
-    border-radius: 25px;
+    border-radius: 25px; /* Rounded corners */
 }
+
 .box-2 {
     position: absolute;
     width: 339px;
     height: 628px;
     top: 18px;
     left: 698px;
-    z-index: 2;
+    z-index: 2; /* Layering */
 }
+
 .box-3 {
     position: absolute;
     width: 334px;
@@ -53,89 +60,108 @@ button {
     top: 0;
     left: 5px;
     font-size: 0px;
-    background: #ffffff;
+    background: #ffffff; /* White background */
     z-index: 2;
-    border-radius: 12px;
+    border-radius: 12px; /* Rounded corners */
 }
+
+/* Text Styles */
 .text {
     display: block;
     position: relative;
     height: 46px;
     margin: 18px 0 0 18px;
-    color: #000000;
+    color: #000000; /* Black text */
     font-family: Days One, var(--default-font-family);
-    font-size: 36px;
+    font-size: 36px; /* Large font size */
     font-weight: 400;
     line-height: 45.826px;
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
     z-index: 6;
 }
+
 .text-2 {
     display: block;
     position: relative;
     height: 16px;
     margin: 8px 0 0 18px;
-    color: #000000;
-    font-family: Inter, var(--default-font-family);
-    font-size: 13px;
+    color: #000000; /* Black text */
+    font-family: Lato, var(--default-font-family);
+    font-size: 13px; /* Small font size */
     font-weight: 300;
     line-height: 15.733px;
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
     z-index: 7;
 }
-.img {
+
+.SummaryBox {
     position: absolute;
     width: 339px;
     height: 524px;
     top: 104px;
     left: 0;
-    background: url(./assets/images/bf75f552-ad68-4864-b66f-62715b337004.png)
-        no-repeat center;
-    background-size: cover;
-    border-radius: 25px;
+    border-radius: 25px; /* Rounded corners */
 }
+
+/* Section Styles */
 .section {
     position: relative;
     width: 294px;
     height: 111px;
     margin: 22px 0 0 23px;
     font-size: 0px;
-    background: #ffffff;
-    border: 1px solid #bfbfbf;
+    background: #ffffff; /* White background */
+    border: 1px solid #bfbfbf; /* Light gray border */
     z-index: 3;
-    overflow: visible auto;
-    border-radius: 10px;
+    overflow: visible auto; /* Allows scrolling if content overflows */
+    border-radius: 10px; /* Rounded corners */
 }
+
+.section-2 {
+    position: relative;
+    width: 294px;
+    height: 47px;
+    margin: 15px 0 0 23px;
+    background: #ffffff; /* White background */
+    border: 1px solid #c5c5c5; /* Light gray border */
+    z-index: 11;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Highlighted Text */
 .text-3 {
     display: block;
     position: relative;
     height: 29px;
     margin: 33px 0 0 37px;
-    color: #dc393c;
-    font-family: Inter, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
+    color: #dc393c; /* Red text */
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px; /* Medium font size */
+    font-weight: 700; /* Bold text */
     line-height: 29px;
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
     z-index: 4;
 }
+
 .text-4 {
     display: block;
     position: relative;
     height: 16px;
     margin: 12px 0 0 80px;
-    color: #646464;
-    font-family: Inter, var(--default-font-family);
-    font-size: 13px;
+    color: #646464; /* Gray text */
+    font-family: Lato, var(--default-font-family);
+    font-size: 13px; /* Small font size */
     font-weight: 300;
     line-height: 15.733px;
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
     z-index: 5;
 }
+
+/* Text and Image Styles for Sections */
 .text-5 {
     display: block;
     position: relative;
@@ -150,27 +176,19 @@ button {
     white-space: nowrap;
     z-index: 8;
 }
-.section-2 {
-    position: relative;
-    width: 294px;
-    height: 47px;
-    margin: 15px 0 0 23px;
-    background: #ffffff;
-    border: 1px solid #c5c5c5;
-    z-index: 11;
-    border-radius: 10px;
-}
+
 .img-2 {
     position: absolute;
     width: 24px;
     height: 19.414px;
     top: 13px;
     left: 11px;
-    background: url(./assets/images/469ae76d-04a0-4188-b295-c528c4497465.svg)
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
         no-repeat center;
     background-size: cover;
     z-index: 13;
 }
+
 .text-6 {
     display: flex;
     align-items: flex-start;
@@ -180,7 +198,7 @@ button {
     top: 15px;
     left: 41px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -188,6 +206,7 @@ button {
     white-space: nowrap;
     z-index: 12;
 }
+
 .group {
     position: relative;
     width: 294px;
@@ -198,17 +217,19 @@ button {
     z-index: 16;
     border-radius: 10px;
 }
+
 .img-3 {
     position: absolute;
     width: 24px;
     height: 19.414px;
     top: 14px;
     left: 11px;
-    background: url(./assets/images/4cfc7eaa-8bc4-4553-88ed-680fcef14caf.svg)
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
         no-repeat center;
     background-size: cover;
     z-index: 18;
 }
+
 .text-7 {
     display: flex;
     align-items: flex-start;
@@ -218,7 +239,7 @@ button {
     top: 15px;
     left: 41px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -226,6 +247,7 @@ button {
     white-space: nowrap;
     z-index: 17;
 }
+
 .group-2 {
     position: relative;
     width: 294px;
@@ -236,6 +258,7 @@ button {
     z-index: 21;
     border-radius: 10px;
 }
+
 .text-8 {
     display: flex;
     align-items: flex-start;
@@ -245,7 +268,7 @@ button {
     top: 15px;
     left: 41px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -253,17 +276,19 @@ button {
     white-space: nowrap;
     z-index: 22;
 }
+
 .pic {
     position: absolute;
     width: 24px;
     height: 19.414px;
     top: 15px;
     left: 11px;
-    background: url(./assets/images/760dc462-f525-4b91-822b-82badc24c8dd.svg)
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
         no-repeat center;
     background-size: cover;
     z-index: 23;
 }
+
 .wrapper {
     position: relative;
     width: 294px;
@@ -274,6 +299,7 @@ button {
     z-index: 26;
     border-radius: 10px;
 }
+
 .text-9 {
     display: flex;
     align-items: flex-start;
@@ -283,7 +309,7 @@ button {
     top: 15px;
     left: 41px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -291,27 +317,31 @@ button {
     white-space: nowrap;
     z-index: 27;
 }
+
 .pic-2 {
     position: absolute;
     width: 24px;
     height: 19.414px;
     top: 16px;
     left: 11px;
-    background: url(./assets/images/0c59c98b-f1ab-41af-9501-c5c2fc83ce58.svg)
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
         no-repeat center;
     background-size: cover;
     z-index: 28;
 }
+
+/* Call-to-Action Section */
 .box-4 {
     position: relative;
     width: 294px;
     height: 47px;
     margin: 17px 0 0 22px;
-    background: #dc393c;
+    background: #dc393c; /* Red background */
     z-index: 30;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); /* Subtle shadow */
 }
+
 .text-a {
     display: flex;
     align-items: flex-start;
@@ -319,16 +349,17 @@ button {
     position: absolute;
     height: 19px;
     top: 14px;
-    left: calc(50% - 62px);
-    color: #ffffff;
+    left: calc(50% - 62px); /* Centers text */
+    color: #ffffff; /* White text */
     font-family: Lato, var(--default-font-family);
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 16px; /* Medium font size */
+    font-weight: 700; /* Bold text */
     line-height: 19px;
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
     z-index: 31;
 }
+
 .text-b {
     display: flex;
     align-items: flex-start;
@@ -337,14 +368,16 @@ button {
     width: 255px;
     height: 26px;
     margin: 8px 0 0 42px;
-    color: #797373;
-    font-family: Inter, var(--default-font-family);
-    font-size: 11px;
+    color: #797373; /* Gray text */
+    font-family: Lato, var(--default-font-family);
+    font-size: 11px; /* Small font size */
     font-weight: 300;
     line-height: 13.313px;
     text-align: center;
     z-index: 32;
 }
+
+/* Section 3 Styles */
 .section-3 {
     position: absolute;
     width: 588px;
@@ -354,6 +387,7 @@ button {
     font-size: 0px;
     z-index: 67;
 }
+
 .text-c {
     display: block;
     position: relative;
@@ -368,13 +402,14 @@ button {
     white-space: nowrap;
     z-index: 33;
 }
+
 .text-d {
     display: block;
     position: relative;
     height: 16px;
     margin: 8px 0 0 4px;
     color: #404040;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 13px;
     font-weight: 300;
     line-height: 15.733px;
@@ -382,6 +417,7 @@ button {
     white-space: nowrap;
     z-index: 34;
 }
+
 .group-3 {
     position: relative;
     width: 587px;
@@ -391,6 +427,7 @@ button {
     z-index: 63;
     border-radius: 12px;
 }
+
 .text-e {
     display: flex;
     align-items: flex-start;
@@ -400,7 +437,7 @@ button {
     top: 11px;
     left: 33px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -408,6 +445,8 @@ button {
     white-space: nowrap;
     z-index: 64;
 }
+
+/* Section 4 Styles */
 .section-4 {
     position: relative;
     width: 587px;
@@ -418,6 +457,7 @@ button {
     overflow: visible auto;
     border-radius: 12px;
 }
+
 .wrapper-2 {
     position: relative;
     width: 556px;
@@ -427,6 +467,7 @@ button {
     z-index: 53;
     border-radius: 10px;
 }
+
 .text-f {
     display: flex;
     align-items: flex-start;
@@ -436,7 +477,7 @@ button {
     top: 10.869px;
     left: 33.498px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -444,6 +485,7 @@ button {
     white-space: nowrap;
     z-index: 55;
 }
+
 .group-4 {
     position: relative;
     width: 556px;
@@ -453,6 +495,7 @@ button {
     z-index: 58;
     border-radius: 10px;
 }
+
 .text-10 {
     display: flex;
     align-items: flex-start;
@@ -462,7 +505,7 @@ button {
     top: 10.869px;
     left: 33.498px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -470,6 +513,8 @@ button {
     white-space: nowrap;
     z-index: 60;
 }
+
+/* Group 5 and 6 Styles */
 .group-5 {
     position: relative;
     width: 587px;
@@ -480,6 +525,7 @@ button {
     overflow: visible auto;
     border-radius: 12px;
 }
+
 .group-6 {
     position: relative;
     width: 556px;
@@ -489,6 +535,7 @@ button {
     z-index: 48;
     border-radius: 10px;
 }
+
 .text-11 {
     display: flex;
     align-items: flex-start;
@@ -498,7 +545,7 @@ button {
     top: 11px;
     left: 29px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -506,6 +553,8 @@ button {
     white-space: nowrap;
     z-index: 50;
 }
+
+/* Section 5 Styles */
 .section-5 {
     position: relative;
     width: 587px;
@@ -515,6 +564,7 @@ button {
     z-index: 61;
     border-radius: 12px;
 }
+
 .text-12 {
     display: flex;
     align-items: flex-start;
@@ -524,7 +574,7 @@ button {
     top: 11px;
     left: 32px;
     color: #000000;
-    font-family: Inter, var(--default-font-family);
+    font-family: Lato, var(--default-font-family);
     font-size: 12px;
     font-weight: 400;
     line-height: 14.523px;
@@ -532,17 +582,20 @@ button {
     white-space: nowrap;
     z-index: 62;
 }
+
+/* Image Styles for Various Sections */
 .img-4 {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 103px;
     left: 1px;
-    background: url(./assets/images/ae8cc789-0418-416f-9266-d9833a6ac301.svg)
+    background: url(/Assets/images/Estimated_pricing/Target_audience.svg)
         no-repeat center;
     background-size: cover;
     z-index: 67;
 }
+
 .text-13 {
     display: flex;
     align-items: flex-start;
@@ -560,17 +613,19 @@ button {
     white-space: nowrap;
     z-index: 36;
 }
+
 .img-5 {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 201px;
     left: 1px;
-    background: url(./assets/images/576aec9d-7dfb-434c-8137-ad1d4c9ff3b7.svg)
+    background: url(/Assets/images/Estimated_pricing/Selected_movies.svg)
         no-repeat center;
     background-size: cover;
     z-index: 66;
 }
+
 .text-14 {
     display: flex;
     align-items: flex-start;
@@ -588,17 +643,19 @@ button {
     white-space: nowrap;
     z-index: 38;
 }
+
 .img-6 {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 379px;
     left: 1px;
-    background: url(./assets/images/32eab57c-5552-407a-8ec8-1b0f0476644c.svg)
+    background: url(/Assets/images/Estimated_pricing/Ad_position.svg)
         no-repeat center;
     background-size: cover;
     z-index: 65;
 }
+
 .text-15 {
     display: flex;
     align-items: flex-start;
@@ -616,17 +673,19 @@ button {
     white-space: nowrap;
     z-index: 43;
 }
+
 .img-7 {
     position: absolute;
     width: 24px;
     height: 24px;
     top: 509px;
     left: 1px;
-    background: url(./assets/images/3fd6cc4e-0a15-4057-a8e0-8f4aa98b4fd3.svg)
+    background: url(/Assets/images/Estimated_pricing/Campaign_icon.svg)
         no-repeat center;
     background-size: cover;
     z-index: 41;
 }
+
 .text-16 {
     display: flex;
     align-items: flex-start;
