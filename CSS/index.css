@@ -1,0 +1,124 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 1280px;
+    height: 832px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.group {
+    position: relative;
+    width: 1189px;
+    height: 754px;
+    margin: 40px 0 0 45px;
+    font-size: 0px;
+    border: 2px dashed #000000;
+    z-index: 6;
+    overflow: visible auto;
+}
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 824px;
+    height: 82px;
+    margin: 40px 0 0 183px;
+    color: #000000;
+    font-family: Days, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.328px;
+    text-align: center;
+    z-index: 5;
+}
+.wrapper {
+    position: relative;
+    width: 901px;
+    height: 440px;
+    margin: 34px 0 0 144px;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.text-2 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.text-3 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+.text-4 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: relative;
+    width: 254.694px;
+    height: 65px;
+    margin: 34px 0 0 468px;
+    padding: 10px 10px 10px 10px;
+    background: #f4453f;
+    z-index: 3;
+    border-radius: 10px;
+}
+.text-5 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 29px;
+    color: #ffffff;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+}
