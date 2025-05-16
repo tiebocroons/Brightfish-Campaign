@@ -4,9 +4,7 @@
         "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
         "Source Han Sans CN", sans-serif;
 }
-*{
-    overflow: hidden;
-}
+
 .main-container {
     overflow: hidden;
 }
@@ -38,7 +36,7 @@ button {
     height: 46px;
     margin: 106px 0 0 446px;
     color: #000000;
-    font-family: Days, var(--default-font-family);
+    font-family: Days One, var(--default-font-family);
     font-size: 36px;
     font-weight: 400;
     line-height: 46px;
@@ -47,9 +45,9 @@ button {
 }
 .wrapper {
     position: relative;
-    width: 649px;
+    width: 718px;
     height: 50px;
-    margin: 24px 0 0 316px;
+    margin: 24px 0 0 281px;
     font-family: Lato, var(--default-font-family);
     font-size: 18px;
     font-weight: 500;
@@ -73,18 +71,90 @@ button {
     color: #000000;
     font-family: Lato, var(--default-font-family);
     font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+}
+.text-4 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
     font-weight: 500;
     line-height: 25px;
     text-align: center;
 }
-.wrapper-2 {
+.text-5 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+}
+.text-6 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+}
+.text-7 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+}
+.text-8 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+}
+.text-9 {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+}
+.text-a {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+}
+.text-b {
+    position: relative;
+    color: #000000;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+}
+.box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     width: 985px;
-    height: 186px;
-    margin: 115px 0 0 149px;
+    height: 183px;
+    margin: 150px 0 0 149px;
     z-index: 5;
 }
 .section {
@@ -101,7 +171,7 @@ button {
     z-index: 2;
     border-radius: 20px;
 }
-.text-4 {
+.text-c {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -117,7 +187,7 @@ button {
     text-align: center;
     z-index: 3;
 }
-.box {
+.wrapper-2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +202,7 @@ button {
     z-index: 5;
     border-radius: 20px;
 }
-.text-5 {
+.text-d {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -157,13 +227,13 @@ button {
     position: relative;
     width: 87px;
     height: 46px;
-    margin: 235px 0 0 60px;
+    margin: 203px 0 0 40px;
     padding: 10px 10px 10px 10px;
-    background: #1e1e1c;
+    background: #bfbfbf;
     z-index: 8;
     border-radius: 10px;
 }
-.text-6 {
+.text-e {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
