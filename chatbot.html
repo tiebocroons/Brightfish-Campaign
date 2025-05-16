@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standalone Halo Chatbot</title>
+    <!-- Include the Halo Web Chat widget script -->
+    <script src="/API/widget.js"></script>
+    <!-- Optional: you can add custom styles here -->
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #halo-chat-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 350px;
+        height: 500px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Chat container where the widget will render -->
+    <div id="halo-chat-container"></div>
+
+    <script>
+  Halo.init({
+    // instead of tenant/botId, use your product token:
+    productToken: 'dd57c655-b6dd-409b-aa02-6ac382947243',
+    container: '#halo-chat-container',
+    // optional overrides:
+    // welcomeMessage: 'Hi there!',
+    // bubblePosition: 'right'
+  });
+</script>
+
+  </body>
+</html>
