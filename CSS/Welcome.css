@@ -1,293 +1,160 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-        "Source Han Sans CN", sans-serif;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--default-font-family);
+  background: #ffffff;
 }
 
 .main-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.main-container,
-.main-container * {
-    box-sizing: border-box;
+h1.headline {
+  margin: 79px auto 0;
+  width: 1073px;
+  color: #000;
+  font-family: "Days One", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
 }
 
-input,
-select,
-textarea,
-button {
-    outline: 0;
+h2.subheadline {
+  margin: 40px auto 0;
+  width: 1073px;
+  color: #000;
+  font-family: "Days One", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.main-container {
-    position: relative;
-    width: 1280px;
-    height: 832px;
-    margin: 0 auto;
-    font-size: 0px;
-    background: #ffffff;
-    overflow: hidden;
-}
-.text {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 1073px;
-    height: 46px;
-    margin: 79px 0 0 104px;
-    color: #000000;
-    font-family: Days One, var(--default-font-family);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 45.826px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 1;
-}
-.text-2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 1073px;
-    height: 31px;
-    margin: 40px 0 0 104px;
-    color: #000000;
-    font-family: Days One, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 30.996px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 2;
-}
 .wrapper {
-    position: relative;
-    width: 981.498px;
-    height: 81px;
-    margin: 142px 0 0 159px;
-    z-index: 18;
+  position: relative;
+  width: 981.5px;
+  height: 81px;
+  margin: 142px auto 0;
 }
-.pic {
-    position: absolute;
-    width: 112.243px;
-    height: 81px;
-    top: 0;
-    left: 0;
-    background: url(/Assets/images/Welcome/audience.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 4;
-}
-.img {
-    position: absolute;
-    width: 89.258px;
-    height: 81px;
-    top: 0;
-    left: 304px;
-    background: url(/Assets/images/Welcome/plan.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 9;
-}
-.img-2 {
-    position: absolute;
-    width: 50px;
-    height: 81px;
-    top: 0;
-    left: 615px;
-    background: url(/Assets/images/Welcome/estimatedPricing.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 13;
-}
+
+.pic,
+.img,
+.img-2,
 .img-3 {
-    position: absolute;
-    width: 108.498px;
-    height: 70.723px;
-    top: 50%;
-    left: 873px;
-    background: url(/Assets/images/Welcome/brightfish.svg)
-        no-repeat center;
-    background-size: cover;
-    transform: translate(0, -44.54%);
-    z-index: 18;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+.pic {
+  width: 112.2px;
+  height: 81px;
+  left: 0;
+  background-image: url(/Assets/images/Welcome/audience.svg);
+}
+
+.img {
+  width: 89.3px;
+  height: 81px;
+  left: 304px;
+  background-image: url(/Assets/images/Welcome/plan.svg);
+}
+
+.img-2 {
+  width: 50px;
+  height: 81px;
+  left: 615px;
+  background-image: url(/Assets/images/Welcome/estimatedPricing.svg);
+}
+
+.img-3 {
+  width: 108.5px;
+  height: 70.7px;
+  top: 50%;
+  left: 873px;
+  transform: translateY(-44.5%);
+  background-image: url(/Assets/images/Welcome/brightfish.svg);
+}
+
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 1061px;
-    height: 60px;
-    margin: 40px 0 0 112px;
-    z-index: 17;
+  display: flex;
+  justify-content: space-between;
+  width: 1061px;
+  margin: 40px auto 0;
 }
-.text-3 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 192px;
-    height: 60px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    z-index: 5;
+
+p.benefit {
+  width: 192px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
 }
-.text-4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 172px;
-    height: 60px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    z-index: 10;
+
+p.benefit:nth-child(2) {
+  width: 172px;
 }
-.text-5 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 174px;
-    height: 60px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    z-index: 14;
+
+p.benefit:nth-child(3),
+p.benefit:nth-child(4) {
+  width: 174px;
 }
-.text-6 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 174px;
-    height: 60px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    text-overflow: initial;
-    z-index: 17;
-    overflow: hidden;
-}
+
 .group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 1088px;
-    height: 50px;
-    margin: 25px 0 0 97px;
-    z-index: 16;
+  display: flex;
+  justify-content: space-between;
+  width: 1088px;
+  margin: 25px auto 0;
 }
-.text-7 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 221px;
-    height: 50px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
-    z-index: 6;
+
+p.detail {
+  width: 198px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
 }
-.text-8 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 198px;
-    height: 50px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
-    z-index: 8;
+
+p.detail:first-child {
+  width: 221px;
 }
-.text-9 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 198px;
-    height: 50px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
-    z-index: 12;
-}
-.text-a {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 198px;
-    height: 50px;
-    color: #000000;
-    font-family: Lato, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
-    z-index: 16;
-}
+
 .wrapper-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 255px;
-    height: 65px;
-    margin: 149px 0 0 513px;
-    background: #dc393c;
-    z-index: 21;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7em;
+}   
+
+.cta-button {
+  background: none;
+  border: none;
+  color: #fff;
+  background: #dc393c;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  width: 255px;
+  height: 65px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
 }
-.text-b {
-    flex-shrink: 0;
-    position: relative;
-    height: 29px;
-    color: #ffffff;
-    font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 21;
+
+.cta-button:hover {
+  background-color: #fff;
+  border: #dc393c 2px solid;
+  color: #dc393c;
+  transition: all 0.3s ease;
 }
