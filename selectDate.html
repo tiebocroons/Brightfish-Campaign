@@ -1,104 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calendar</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
-        <link rel="stylesheet" href="CSS/selectDate.css" />
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="section">
-                <div class="img"><span class="text">1</span></div>
-                <div class="img-2"></div>
-                <div class="img-3"></div>
-                <div class="img-4"></div>
-                <div class="pic"></div>
-                <div class="img-5"></div>
-                <span class="text-2">2</span><span class="text-3">3</span
-                ><span class="text-4">4</span><span class="text-5">5</span
-                ><span class="text-6">6</span>
-                <div class="group"><div class="section-2"></div></div>
-            </div>
-            <span class="text-7">Choose your campaign-week</span
-            ><span class="text-8"
-                >Every campaign has a fixed date of 1 week, from Wednesday to Tuesday.</span
-            >
-            <div class="group-2">
-                <div class="box">
-                    <div class="wrapper">
-                        <span class="text-9">May 2025</span>
-                        <div class="section-3">
-                            <div class="section-4"><div class="img-6"></div></div>
-                            <div class="img-7"></div>
-                        </div>
-                    </div>
-                    <div class="wrapper-2">
-                        <div class="wrapper-3">
-                            <div class="box-2"><span class="text-a">Mo</span></div>
-                            <div class="box-3"><span class="text-b">Tu</span></div>
-                            <div class="section-5"><span class="text-c">We</span></div>
-                            <div class="wrapper-4"><span class="text-d">Th</span></div>
-                            <div class="box-4"><span class="text-e">Fr</span></div>
-                            <div class="group-3"><span class="text-f">Sa</span></div>
-                            <div class="group-4"><span class="text-10">Su</span></div>
-                        </div>
-                        <div class="box-5">
-                            <div class="section-6"><span class="text-11">28</span></div>
-                            <div class="wrapper-5"><span class="text-12">29</span></div>
-                            <div class="group-5"><span class="text-13">30</span></div>
-                            <div class="group-6"><span class="text-14">1</span></div>
-                            <div class="section-7"><span class="text-15">2</span></div>
-                            <div class="wrapper-6"><span class="text-16">3</span></div>
-                            <div class="box-6"><span class="text-17">4</span></div>
-                        </div>
-                        <div class="section-8">
-                            <div class="wrapper-7"><span class="text-18">5</span></div>
-                            <div class="group-7"><span class="text-19">6</span></div>
-                            <div class="box-7"><span class="text-1a">7</span></div>
-                            <div class="group-8"><span class="text-1b">8</span></div>
-                            <div class="section-9"><span class="text-1c">9</span></div>
-                            <div class="wrapper-8"><span class="text-1d">10</span></div>
-                            <div class="section-a"><span class="text-1e">11</span></div>
-                        </div>
-                        <div class="box-8">
-                            <div class="group-9"><span class="text-1f">12</span></div>
-                            <div class="group-a"><span class="text-20">13</span></div>
-                            <div class="group-b"><span class="text-21">14</span></div>
-                            <div class="wrapper-9"><span class="text-22">15</span></div>
-                            <div class="section-b"><span class="text-23">16</span></div>
-                            <div class="section-c"><span class="text-24">17</span></div>
-                            <div class="group-c"><span class="text-25">18</span></div>
-                        </div>
-                        <div class="section-d">
-                            <div class="wrapper-a"><span class="text-26">19</span></div>
-                            <div class="group-d"><span class="text-27">20</span></div>
-                            <div class="section-e"><span class="text-28">21</span></div>
-                            <div class="group-e"><span class="text-29">22</span></div>
-                            <div class="group-f"><span class="text-2a">23</span></div>
-                            <div class="section-f"><span class="text-2b">24</span></div>
-                            <div class="section-10"><span class="text-2c">25</span></div>
-                        </div>
-                        <div class="group-10">
-                            <div class="section-11"><span class="text-2d">26</span></div>
-                            <div class="box-9"><span class="text-2e">27</span></div>
-                            <div class="section-12"><span class="text-2f">28</span></div>
-                            <div class="wrapper-b"><span class="text-30">29</span></div>
-                            <div class="group-11"><span class="text-31">30</span></div>
-                            <div class="wrapper-c"><span class="text-32">31</span></div>
-                            <div class="section-13"><span class="text-33">1</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-8"></div>
-            </div>
-            <div class="wrapper-d">
-                <div class="group-12"><span class="text-34">Back</span></div>
-                <div class="wrapper-e"><span class="text-35">Next</span></div>
-            </div>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose your campaign-week</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+  <style>
+    .progress-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #161719;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #000;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.circle.active {
+  background-color: #dc393c;
+}
+
+    body {
+      font-family: 'lato', sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+ h1 {
+  font-family: 'Days One', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+    p {
+      color: #666;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    .calendar {
+      border: 1px solid #eee;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 560px;
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1px;
+      font-weight: bold;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day, .weekday {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .weekday {
+      font-weight: 600;
+    }
+
+    .day {
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+    }
+
+    .day.selected {
+      background-color: #40954c;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .day.disabled {
+      color: #ccc;
+      cursor: not-allowed;
+      background: #f9f9f9;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1300px;
+      position: fixed;
+      bottom: 1em;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-back {
+      background-color: #bfbfbf;
+    }
+
+    .btn-next {
+      background-color: #dc393c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-wrapper">
+    <div class="progress-bar">
+      <div class="circle active"><span>1</span></div>
+      <div class="circle"><span>2</span></div>
+      <div class="circle"><span>3</span></div>
+      <div class="circle"><span>4</span></div>
+      <div class="circle"><span>5</span></div>
+      <div class="circle"><span>6</span></div>
+    </div>
+  </div>
+
+  <h1>Choose your campaign-week</h1>
+  <p>Every campaign has a fixed date of 1 week, from Wednesday to Tuesday.</p>
+
+  <div class="calendar">
+    <div class="calendar-header">
+      <span>May 2025</span>
+    </div>
+    <div class="calendar-grid">
+      <div class="weekday">Mo</div>
+      <div class="weekday">Tu</div>
+      <div class="weekday">We</div>
+      <div class="weekday">Th</div>
+      <div class="weekday">Fr</div>
+      <div class="weekday">Sa</div>
+      <div class="weekday">Su</div>
+
+      <div class="day disabled">28</div>
+      <div class="day disabled">29</div>
+      <div class="day disabled">30</div>
+      <div class="day">1</div>
+      <div class="day">2</div>
+      <div class="day">3</div>
+      <div class="day">4</div>
+
+      <div class="day">5</div>
+      <div class="day">6</div>
+      <div class="day">7</div>
+      <div class="day">8</div>
+      <div class="day">9</div>
+      <div class="day">10</div>
+      <div class="day">11</div>
+
+      <div class="day">12</div>
+      <div class="day">13</div>
+      <div class="day">14</div>
+      <div class="day">15</div>
+      <div class="day">16</div>
+      <div class="day">17</div>
+      <div class="day">18</div>
+
+      <div class="day">19</div>
+      <div class="day">20</div>
+      <div class="day">21</div>
+      <div class="day">22</div>
+      <div class="day">23</div>
+      <div class="day">24</div>
+      <div class="day">25</div>
+
+      <div class="day">26</div>
+      <div class="day">27</div>
+      <div class="day">28</div>
+      <div class="day">29</div>
+      <div class="day">30</div>
+      <div class="day">31</div>
+      <div class="day disabled">1</div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button class="btn btn-back">Back</button>
+    <button class="btn btn-next">Next</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const days = document.querySelectorAll(".day");
+
+      days.forEach(d => d.classList.remove("selected"));
+
+      days.forEach((day, index) => {
+        day.addEventListener("click", () => {
+          const number = parseInt(day.textContent);
+          const dayOfWeek = index % 7;
+
+          if (dayOfWeek === 2) {
+            days.forEach(d => d.classList.remove("selected"));
+            for (let i = 0; i < 7; i++) {
+              const next = days[index + i];
+              if (next) next.classList.add("selected");
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
 </html>
