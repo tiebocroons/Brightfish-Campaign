@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20em;
+  gap: 13em;
   margin: 0 auto;
   width: fit-content;
 }
