@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,161 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choose your campaign-week</title>
 
+  <link rel="stylesheet" href="CSS/general.css">
+  <link rel="stylesheet" href="CSS/selectDate.css">
   <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 
-  <style>
-    .progress-wrapper {
-  width: 100%;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
 
-.progress-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  max-width: 800px;
-  position: relative;
-}
-
-.progress-bar::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background-color: #161719;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.circle {
-  width: 33px;
-  height: 33px;
-  border-radius: 50%;
-  background-color: #000;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.circle.active {
-  background-color: #dc393c;
-}
-
-    body {
-      font-family: 'lato', sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-    }
-
- h1 {
-  font-family: 'Days One', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-    p {
-      color: #666;
-      font-weight: 300;
-      margin-bottom: 2rem;
-    }
-
-    .calendar {
-      border: 1px solid #eee;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      width: 560px;
-    }
-
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1px;
-      font-weight: bold;
-    }
-
-    .calendar-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-    }
-
-    .day, .weekday {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .weekday {
-      font-weight: 600;
-    }
-
-    .day {
-      cursor: pointer;
-      background: #fff;
-      border: 1px solid #e5e5e5;
-    }
-
-    .day.selected {
-      background-color: #40954c;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .day.disabled {
-      color: #ccc;
-      cursor: not-allowed;
-      background: #f9f9f9;
-    }
-
-    .button-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 1300px;
-      position: fixed;
-      bottom: 1em;
-    }
-
-    .btn {
-      padding: 12px 28px;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      color: white;
-    }
-
-    .btn-back {
-      background-color: #bfbfbf;
-    }
-
-    .btn-next {
-      background-color: #dc393c;
-    }
-  </style>
 </head>
 <body>
 
@@ -233,8 +84,8 @@
   </div>
 
   <div class="button-container">
-    <button class="btn btn-back">Back</button>
-    <button class="btn btn-next">Next</button>
+    <a href="./planCampaign.html" class="btn-back">Back</a>    
+    <a href="./TargetAudience.html" class="btn-next">Next</a>
   </div>
 
   <script>
