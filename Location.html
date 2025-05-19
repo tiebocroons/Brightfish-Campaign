@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/location.css">
+    <link rel="stylesheet" href="CSS/general.css">
     <title>Select Location</title>
 </head>
 <body>
-    <div class="progress-bar">
-        <div class="progress-step active">1</div>
-        <div class="progress-line active"></div>
-        <div class="progress-step active">2</div>
+    <div class="progress-bar" data-step="2">
+        <div class="progress-step">1</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">2</div>
         <div class="progress-line"></div>
         <div class="progress-step">3</div>
         <div class="progress-line"></div>
@@ -80,8 +81,12 @@
         </div>
     </div>
     <div class="nav-buttons">
-        <button class="btn btn-back">Back</button>
+        <button class="btn btn-back" onclick="window.location.href='selectDate.html'">Back</button>
         <button class="btn btn-next">Next</button>
     </div>
+    <script>
+        updateProgressBar(X); // Replace X with the step number for this page
+    </script>
+    <script src="Scripts/progressbar.js"></script>
 </body>
 </html>

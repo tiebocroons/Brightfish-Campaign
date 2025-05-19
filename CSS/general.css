@@ -1,60 +1,38 @@
-.progress-wrapper {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .progress-bar {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 800px;
-    align-items: center;
-  }
-  
-  .progress-bar::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background-color: #161719;
-    z-index: 1;
-    transform: translateY(-50%);
-  }
-  
-  .progress-fill {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 4px;
-    width: 0%;
-    background-color: #dc393c;
-    z-index: 2;
-    transform: translateY(-50%);
-    transition: width 0.3s ease;
-  }
-  
-  .circle {
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    background-color: #000;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  .circle.active {
-    background-color: #dc393c;
-  }
-  
+.progress-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 32px 0 24px 0;
+        }
+        .progress-step {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid #E0E0E0;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+        .progress-step.active {
+            background: #E94B4B;
+            color: #fff;
+            border-color: #E94B4B;
+        }
+        .progress-bar .progress-line {
+            height: 4px;
+            width: 60px;
+            background: #E0E0E0;
+            margin: 0 4px;
+            border-radius: 2px;
+            position: relative;
+            top: -2px;
+        }
+        .progress-bar .progress-line.active {
+            background: #E94B4B;
+        }
