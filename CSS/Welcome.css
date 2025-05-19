@@ -20,7 +20,7 @@ body {
 }
 
 h1.headline {
-  margin: 79px auto 0;
+  margin: 20px auto 0;
   width: 1073px;
   color: #000;
   font-family: "Days One", sans-serif;
@@ -43,7 +43,7 @@ h2.subheadline {
   position: relative;
   width: 981.5px;
   height: 81px;
-  margin: 142px auto 0;
+  margin: 120px auto 0;
 }
 
 .pic,
