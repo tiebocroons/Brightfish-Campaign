@@ -13,13 +13,16 @@
 }
 
 body {
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  min-height: 100vh;
+  position: relative;
 }
 
 .title {
@@ -27,43 +30,46 @@ body {
   font-size: 36px;
   font-weight: 400;
   text-align: center;
-  padding-top: 2em;
-  margin-bottom: 1em;
-  color: #000;
+  color: #000000;
+  margin-bottom: 0.5em;
 }
 
 .description {
   font-size: 18px;
   text-align: center;
-  color: #000;
-  margin: 0 auto;
-  margin-bottom: 9em;
+  color: #000000;
+  max-width: 800px;
+  margin-bottom: 6em;
+  line-height: 1.6;
 }
 
 .button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 13em;
-  margin: 0 auto;
-  width: fit-content;
+  gap: 10em;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
 }
 
 .btn-left,
 .btn-right {
+  display: inline-block;
   width: 400px;
   height: 183px;
-  border: 3px solid transparent; /* <-- Dit is nieuw */
-  border-radius: 20px;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 32px;
   font-weight: 700;
-  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
   cursor: pointer;
-  padding: 0 20px;
-  transition: all 0.3s ease; /* <-- Verplaatst naar hier voor consistentie */
+  color: #ffffff;
 }
-
 
 .btn-left {
   background-color: #dc393c;
@@ -73,12 +79,6 @@ body {
   background-color: #ffffff;
   color: #dc393c;
   border-color: #dc393c;
-}
-
-.btn-right:hover {
-  background-color: #ffffff;
-  color: #3d67a2;
-  border-color: #3d67a2;
 }
 
 .btn-right {
@@ -98,19 +98,21 @@ body {
 }
 
 .btn-back {
-  background: #bfbfbf;
-  color: #fff;
+  display: inline-block;
+  background-color: #bfbfbf;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  border: none;
-  border-radius: 10px;
+  text-decoration: none;
   padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn-back:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #bfbfbf;
-  border: 3px solid #bfbfbf;
-  transition: all 0.3s ease;
+  border-color: #bfbfbf;
 }
