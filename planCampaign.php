@@ -1,3 +1,6 @@
+<?php
+$blueTheme = isset($_GET['theme']) && $_GET['theme'] === 'blue';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap"/>
     <link rel="stylesheet" href="CSS/planCampaign.css" />
 </head>
-<body>
+<body<?php if ($blueTheme) echo ' class="blue-theme"'; ?>>
     <div class="main-container">
         <div class="intro">
             <h1 class="title">Plan your campaign</h1>
@@ -21,7 +24,10 @@
         
         <div class="button-group">
             <a href="./selectDate.html" class="btn-left">See which movie suits your campaign</a>
-            <a href="./MovieList.html" class="btn-right">I already have a movie in mind</a>
+            <form method="get" action="">
+                <input type="hidden" name="theme" value="blue" />
+                <button type="submit" class="btn-right">I already have a movie in mind</button>
+            </form>
         </div>
         
         <div class="back-button">
