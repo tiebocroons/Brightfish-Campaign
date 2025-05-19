@@ -116,3 +116,43 @@ body {
   color: #bfbfbf;
   border-color: #bfbfbf;
 }
+
+/* Blue Theme Overrides */
+.blue-theme .main-container {
+  background-color: #3d67a2 !important;
+}
+
+.blue-theme .title,
+.blue-theme .description {
+  color: #fff !important;
+}
+
+.blue-theme .btn-left,
+.blue-theme .btn-right,
+.blue-theme .btn-back {
+  background-color: #3d67a2 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.blue-theme .btn-left:hover,
+.blue-theme .btn-right:hover,
+.blue-theme .btn-back:hover {
+  background-color: #fff !important;
+  color: #3d67a2 !important;
+  border-color: #3d67a2 !important;
+}
+
+/* Page transition fade-out effect */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* If you have logo or other elements, add their selectors here for color overrides */
