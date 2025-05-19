@@ -20,13 +20,40 @@
         </div>
         
         <div class="button-group">
-            <a href="./selectDate.html" class="btn-left">See which movie suits your campaign</a>
-            <a href="./MovieList.html" class="btn-right">I already have a movie in mind</a>
+            <a href="#" class="btn-left" id="btnLeft">See which movie suits your campaign</a>
+            <form method="get" action="">
+                <input type="hidden" name="theme" value="blue" />
+                <button type="submit" class="btn-right">I already have a movie in mind</button>
+            </form>
         </div>
         
-        <div class="back-button">
-            <a href="./Welcome.html" class="btn-back">Back</a>
-        </div>
+        <button class="back-button">
+            <a href="./Welcome.html" class="btn-back" id="btnBack">Back</a>
+        </button>
     </div>
+    <script>
+      document.getElementById('btnLeft').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = './selectDate.html';
+        }, 500);
+      });
+      document.getElementById('btnBack').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          window.location.href = './Welcome.html';
+        }, 500);
+      });
+      document.querySelector('.btn-right').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function() {
+          // Submit the form after fade-out
+          e.target.closest('form').submit();
+        }, 500);
+      });
+    </script>
 </body>
 </html>
