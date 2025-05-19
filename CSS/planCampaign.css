@@ -53,7 +53,7 @@ body {
 .btn-right {
   width: 400px;
   height: 183px;
-  border: none;
+  border: 3px solid transparent; /* <-- Dit is nieuw */
   border-radius: 20px;
   color: #fff;
   font-size: 32px;
@@ -61,6 +61,7 @@ body {
   text-align: center;
   cursor: pointer;
   padding: 0 20px;
+  transition: all 0.3s ease; /* <-- Verplaatst naar hier voor consistentie */
 }
 
 
@@ -71,8 +72,13 @@ body {
 .btn-left:hover {
   background-color: #ffffff;
   color: #dc393c;
-  border: 3px solid #dc393c;
-  transition: all 0.3s ease;
+  border-color: #dc393c;
+}
+
+.btn-right:hover {
+  background-color: #ffffff;
+  color: #3d67a2;
+  border-color: #3d67a2;
 }
 
 .btn-right {
@@ -82,8 +88,7 @@ body {
 .btn-right:hover {
   background-color: #ffffff;
   color: #3d67a2;
-  border: 3px solid #3d67a2;
-  transition: all 0.3s ease;
+  border-color: #3d67a2;
 }
 
 .back-button {
