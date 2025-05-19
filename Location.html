@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Select Locations</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap" />
-        <link rel="stylesheet" href="CSS/location.css" />
-    </head>
-    <body>
-        <div class="progress-wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/location.css">
+    <title>Select Location</title>
+</head>
+<body>
     <div class="progress-bar">
-      <div class="circle active"><span>1</span></div>
-      <div class="circle"><span>2</span></div>
-      <div class="circle"><span>3</span></div>
-      <div class="circle"><span>4</span></div>
-      <div class="circle"><span>5</span></div>
-      <div class="circle"><span>6</span></div>
+        <div class="progress-step active">1</div>
+        <div class="progress-line active"></div>
+        <div class="progress-step active">2</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">3</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">4</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">5</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">6</div>
     </div>
-  </div>
-            <span class="text-7">Select your desired location(s)</span>
-            <div class="box">
-                <span class="text-8">Search locations</span>
-                <div class="img-4"></div>
+    <div class="title">
+        <h2>Select your desired location(s)</h2>
+        <div class="search-bar">
+                <input type="text" placeholder="Search locations">
+                <span class="search-icon">&#128269;</span>
             </div>
-            <div class="box-2">
-                <div class="wrapper-3">
-                    <div class="box-3">
-                        <div class="img-5"></div>
-                        <span class="text-9">High reach</span>
-                    </div>
-                    <span class="text-a">Kinepolis Antwerp</span>
-                    <div class="pic-4"></div>
+    </div>
+    
+    <div class="container">
+                <div class="map-section">
+            <img src="Assets/images/Location_page/Belgium.svg" alt="Belgium map" style="max-width: 100%; border-radius: 24px; background: none;">
+        </div>
+        <div class="locations-section">
+            <div class="location-list">
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Antwerp
+                    </label>
+                    <span class="visitor-badge badge-red">2.500 visitors / month</span>
                 </div>
-                <div class="pic-5"><div class="img-6"></div></div>
-                <div class="section">
-                    <div class="group-2">
-                        <div class="img-7"></div>
-                        <span class="text-b">High reach</span>
-                    </div>
-                    <div class="img-8"></div>
-                    <span class="text-c">Kinepolis Brussels</span>
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Brussels
+                    </label>
+                    <span class="visitor-badge badge-red">2.500 visitors / month</span>
                 </div>
-                <div class="section-2">
-                    <div class="box-4">
-                        <div class="img-9"></div>
-                        <span class="text-d">Medium reach</span>
-                    </div>
-                    <div class="img-a"></div>
-                    <span class="text-e">Kinepolis Ghent</span>
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Ghent
+                    </label>
+                    <span class="visitor-badge badge-yellow">1.000 visitors / month</span>
                 </div>
-                <div class="box-5">
-                    <div class="section-3">
-                        <div class="pic-6"></div>
-                        <span class="text-f">Medium reach</span>
-                    </div>
-                    <div class="pic-7"></div>
-                    <span class="text-10">Kinepolis Hasselt</span>
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Hasselt
+                    </label>
+                    <span class="visitor-badge badge-yellow">1.000+ visitors / month</span>
                 </div>
-                <div class="group-3">
-                    <div class="wrapper-4">
-                        <div class="img-b"></div>
-                        <span class="text-11">Low reach</span
-                        ><span class="text-12">Low reach</span>
-                    </div>
-                    <span class="text-13">Kinepolis Kortrijk</span>
-                    <div class="pic-8"></div>
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Kortrijk
+                    </label>
+                    <span class="visitor-badge badge-blue">+500 visitors / month</span>
                 </div>
-            </div>
-            <div class="wrapper-5">
-                <div class="section-4">
-                    <div class="img-c"></div>
-                    <span class="text-14">Low reach</span
-                    ><span class="text-15">Low reach</span>
+                <div class="location-item">
+                    <label class="location-label">
+                        <input type="radio" name="location" class="location-checkbox">
+                        Kinepolis Bruges
+                    </label>
+                    <span class="visitor-badge badge-blue">+500 visitors / month</span>
                 </div>
-                <div class="pic-9"></div>
-                <span class="text-16">Kinepolis Bruges</span>
-            </div>
-            <div class="wrapper-6">
-                <div class="wrapper-7"><span class="text-17">Back</span></div>
-                <div class="box-6"><span class="text-18">Next</span></div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="nav-buttons">
+        <button class="btn btn-back">Back</button>
+        <button class="btn btn-next">Next</button>
+    </div>
+</body>
 </html>
