@@ -208,3 +208,8 @@ p {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.btn-next:hover {
+  background-color: #ffffff;
+  color: #dc393c;
+  border-color: #dc393c;
+}

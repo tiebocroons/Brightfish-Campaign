@@ -37,9 +37,18 @@
     </div>
 
     <div class="wrapper-2">
-      <a href="./planCampaign.html" class="cta-button">Let’s get started</a>
+      <a href="./planCampaign.html" class="cta-button" id="ctaButton">Let’s get started</a>
     </div>
   </div>
+  <script>
+    document.getElementById('ctaButton').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = './planCampaign.html';
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>
