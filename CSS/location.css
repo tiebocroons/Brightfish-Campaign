@@ -60,7 +60,7 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-top: 9px;
     justify-content: flex-end;
     padding-right: 24px;
 }

@@ -73,8 +73,6 @@
                 </div>
             </div>
             <div class="section-7">
-                <div class="wrapper-7"><span class="text-12">Back</span></div>
-                <div class="box-2"><span class="text-13">Next</span></div>
                 <div class="box-3">
                     <div class="img-9"></div>
                     <span class="text-14">Sonic 3</span>
@@ -111,6 +109,31 @@
                 </div>
             </div>
         </div>
+        <div class="nav-buttons">
+                <button class="btn btn-back" id="btnBack">Back</button>
+                <button class="btn btn-next" id="btnNext">Next</button>
+        </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fade-out transition for Back button
+            document.getElementById('btnBack').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(function () {
+                    window.location.href = 'Location.html';
+                }, 500);
+            });
+
+            // Fade-out transition for Next button
+            document.getElementById('btnNext').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(function () {
+                    window.location.href = 'UploadAd.html';
+                }, 500);
+            });
+        });
+    </script>
     </body>
     <script src="/Scripts/progressbar.js"></script>
 </html>
