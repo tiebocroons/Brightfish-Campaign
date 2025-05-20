@@ -74,5 +74,5 @@ const tabAd = document.getElementById('tab-ad');
         window.location.href = 'MovieList.html';
     };
     document.getElementById('btnNext').onclick = function() {
-        window.location.href = 'ReceiveEstimates.html';
+        window.location.href = 'Summary.html';
     };
