@@ -99,45 +99,52 @@
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const days = document.querySelectorAll(".day");
+  document.addEventListener("DOMContentLoaded", () => {
+    const days = document.querySelectorAll(".day");
 
-      days.forEach(d => d.classList.remove("selected"));
+    days.forEach(d => d.classList.remove("selected"));
 
-      days.forEach((day, index) => {
-        day.addEventListener("click", () => {
-          const number = parseInt(day.textContent);
-          const dayOfWeek = index % 7;
+    days.forEach((day, index) => {
+      day.addEventListener("click", () => {
+        if (day.classList.contains("disabled")) return;
 
-          if (dayOfWeek === 2) {
-            days.forEach(d => d.classList.remove("selected"));
-            for (let i = 0; i < 7; i++) {
-              const next = days[index + i];
-              if (next) next.classList.add("selected");
-            }
+        // Find the index of the Wednesday for this week
+        const dayOfWeek = index % 7;
+        const wednesdayIndex = index - (dayOfWeek - 2 < 0 ? dayOfWeek + 5 : dayOfWeek - 2); // 2 = Wednesday
+
+        // Clear previous selection
+        days.forEach(d => d.classList.remove("selected"));
+
+        // Select from Wednesday to Tuesday (7 days)
+        for (let i = 0; i < 7; i++) {
+          const selectIndex = wednesdayIndex + i;
+          const selectDay = days[selectIndex];
+          if (selectDay && !selectDay.classList.contains("disabled")) {
+            selectDay.classList.add("selected");
           }
-        });
-      });
-
-      // Fade-out transition for Next button
-      document.getElementById('btnNext').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(function () {
-          window.location.href = './Location.html';
-        }, 500);
-      });
-
-      // Fade-out transition for Back button
-      document.getElementById('btnBack').addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(function () {
-          window.location.href = './planCampaign.html';
-        }, 500);
+        }
       });
     });
-  </script>
+
+    // Fade-out transition for Next button
+    document.getElementById('btnNext').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(function () {
+        window.location.href = './Location.html';
+      }, 500);
+    });
+
+    // Fade-out transition for Back button
+    document.getElementById('btnBack').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      setTimeout(function () {
+        window.location.href = './planCampaign.html';
+      }, 500);
+    });
+  });
+</script>
   <script src="Scripts/progressbar.js"></script>
 </body>
 
