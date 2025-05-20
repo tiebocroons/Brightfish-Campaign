@@ -28,22 +28,27 @@
         </div>
         <div class="group-2">
             <div class="box-2">
-                <span class="text-7">Receive my estimate</span>
-                <span class="text-8">Enter your company name & email address</span>
-                <label for="company-name" class="text-9">Company name:</label>
-                <input type="text" id="company-name" class="box-3" placeholder="Enter your company name" />
-                <label for="email-address" class="text-a">Email address:</label>
-                <input type="email" id="email-address" class="wrapper-2" placeholder="Enter your email address" />
-                <label for="extra-info" class="text-b">Extra info? Leave it here:</label>
-                <textarea id="extra-info" class="group-3" placeholder="Enter additional information"></textarea>
-                <button class="wrapper-3"><span class="text-c">Send</span></button>
-                <div class="pic-3"></div>
-                <span class="text-d">
-                    I give Brightfish permission to contact me by email with
-                    information, updates, or offers. I understand that I can unsubscribe
-                    at any time.
-                </span>
-            </div>
+    <span class="text-7">Receive my estimate</span>
+    <span class="text-8">Enter your company name & email address</span>
+    <form action="https://formspree.io/f/mzzrwjad" method="POST" autocomplete="on">
+        <label for="company-name" class="text-9">Company name:</label>
+        <input type="text" id="company-name" class="box-3" name="company" placeholder="Enter your company name" required />
+
+        <label for="email-address" class="text-a">Email address:</label>
+        <input type="email" id="email-address" class="wrapper-2" name="email" placeholder="Enter your email address" required />
+
+        <label for="extra-info" class="text-b">Extra info? Leave it here:</label>
+        <textarea id="extra-info" class="group-3" name="extra" placeholder="Enter additional information"></textarea>
+
+        <label class="text-d" style="display: flex; align-items: flex-start; gap: 8px; margin-top: 12px;">
+            <input type="checkbox" name="permission" required style="margin-top: 3px;">
+            I give Brightfish permission to contact me by email with information, updates, or offers. I understand that I can unsubscribe at any time.
+        </label>
+
+        <button class="wrapper-3" type="submit"><span class="text-c">Send</span></button>
+    </form>
+    <div class="pic-3"></div>
+</div>
             <div class="Moving_fish"></div>
             <div class="button-container">
                 <a href="./planCampaign.html" class="btn-back" id="btnBack">Back</a>
