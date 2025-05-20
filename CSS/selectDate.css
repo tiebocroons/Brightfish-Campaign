@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px;
+    overflow-y: hidden;
   }
   
   .container {
@@ -13,7 +14,6 @@ body {
   h1 {
     font-size: 32px;
     font-weight: bold;
-    padding-top: 50px;
     margin-bottom: 16px;
   }
   p {
@@ -23,7 +23,7 @@ body {
   }
   
   .calendar {
-    margin-top: 40px;
+    margin-top: 16px;
     display: inline-block;
     background: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -84,14 +84,14 @@ body {
     font-family: 'Days One', sans-serif;
     font-size: 2rem;
     font-weight: 400;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
   
       p {
         color: #666;
         font-weight: 300;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
       }
   
       .calendar {
