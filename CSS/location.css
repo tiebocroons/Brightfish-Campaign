@@ -138,13 +138,15 @@ body {
             color: #444;
         }
         .btn-next {
-            background: linear-gradient(90deg, #E94B4B 60%, #FF6B6B 100%);
+            background: #E94B4B;
             color: #fff;
             box-shadow: 0 2px 8px #e94b4b33;
             transition: background 0.2s;
         }
         .btn-next:hover {
-            background: linear-gradient(90deg, #FF6B6B 60%, #E94B4B 100%);
+            background-color: #ffffff;
+            color: #dc393c;
+            border-color: #dc393c;
         }
         /* Responsive */
         @media (max-width: 900px) {
