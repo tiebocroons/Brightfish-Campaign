@@ -1,172 +1,175 @@
 body {
-    font-family: "Inter", sans-serif;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    overflow-y: hidden;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-  p {
-    font-size: 14px;
-    margin-top: 8px;
-    color: #555;
-  }
-  
-  .calendar {
-    margin-top: 16px;
-    display: inline-block;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 24px;
-  }
-  
-  .header {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  
-  .weekdays, .days {
-    display: grid;
-    grid-template-columns: repeat(7, 40px);
-    gap: 8px;
-    justify-content: center;
-  }
-  
-  .weekdays div {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .day {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
-    background: #f1f1f1;
-    color: #333;
-    transition: background-color 0.2s;
-  }
-  
-  .day:hover {
-    background: #e1e1e1;
-  }
-  
-  .day.selected {
-    background: #40954c !important;
-    color: #fff !important;
-    font-weight: 600;
-  } 
-  
-      body {
-        font-family: 'lato', sans-serif;
-        background: #fff;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-      }
-  
-   h1 {
-    font-family: 'Days One', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-      p {
-        color: #666;
-        font-weight: 300;
-        margin-bottom: 0.5rem;
-      }
-  
-      .calendar {
-        border: 1px solid #eee;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        width: 560px;
-        margin-bottom: 5rem;
-      }
-  
-      .calendar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1px;
-        font-weight: bold;
-      }
-  
-      .calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-      }
-  
-      .day, .weekday {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      .weekday {
-        font-weight: 600;
-      }
-  
-      .day {
-        cursor: pointer;
-        background: #fff;
-        border: 1px solid #e5e5e5;
-      }
-  
-      .day.selected {
-        background-color: #40954c;
-        color: #fff;
-        font-weight: 600;
-      }
-  
-      .day.disabled {
-        color: #ccc;
-        cursor: not-allowed;
-        background: #f9f9f9;
-      }
-  
-      .button-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 1300px;
-        position: fixed;
-        bottom: 1em;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  overflow-y: hidden;
+}
 
-      }
-  
-      .btn {
-        padding: 12px 28px;
-        font-size: 16px;
-        font-weight: 600;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
-        color: white;
-      }
-  
-      .back-button {
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #555;
+}
+
+.calendar {
+  margin-top: 16px;
+  display: inline-block;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  gap: 8px;
+  justify-content: center;
+}
+
+.weekdays div {
+  font-weight: bold;
+  color: #333;
+}
+
+.day {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background: #f1f1f1;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.day:hover {
+  background: #e1e1e1;
+}
+
+.day.selected {
+  background: #40954c !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Days One', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.calendar {
+  border: 1px solid #eee;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 560px;
+  margin-bottom: 5rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day,
+.weekday {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekday {
+  font-weight: 600;
+}
+
+.day {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.day.selected {
+  background-color: #40954c;
+  color: #fff;
+  font-weight: 600;
+}
+
+.day.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  background: #f9f9f9;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  position: fixed;
+  bottom: 1em;
+
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.back-button {
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -191,20 +194,17 @@ body {
   color: #bfbfbf;
   border-color: #bfbfbf;
 }
-  
-      .btn-next {
-        background-color: #dc393c;
-        display: inline-block;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration: none;
-        padding: 12px 20px;
-        border-radius: 10px;
-        border: 3px solid transparent;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
 
-  
-  
+.btn-next {
+  background-color: #dc393c;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

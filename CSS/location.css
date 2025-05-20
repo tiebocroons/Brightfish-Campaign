@@ -1,186 +1,208 @@
 body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fff;
-            margin: 0;
-            padding: 0;
-            overflow-y: hidden;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 48px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .map-section {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 350px;
-            background: none;
-        }
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
 
-        .map-section img {
-            max-width: 100%;
-            border-radius: 24px;
-            background: none;
-        }
-        .locations-section {
-            flex: 1.2;
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px 0 24px 0;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .title {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 12px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 200px;
-        }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-        .title h2 {
-            font-size: 2rem;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            margin-bottom: 16px;
-            justify-content: flex-end;
-            padding-right: 24px;
-        }
-        .search-bar input {
-            padding: 8px 32px 8px 12px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            font-size: 1rem;
-            outline: none;
-        }
-        .search-bar .search-icon {
-            position: relative;
-            left: -28px;
-            color: #aaa;
-            font-size: 1.1rem;
-        }
-        .location-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .location-item {
-            display: flex;
-            align-items: center;
-            background: #fafafa;
-            border-radius: 10px;
-            padding: 16px 24px;
-            border: 1px solid #eee;
-            justify-content: space-between;
-        }
-        .location-label {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-        .location-checkbox {
-            width: 22px;
-            height: 22px;
-            accent-color: #E94B4B;
-        }
-        .visitor-badge {
-            padding: 4px 16px;
-            border-radius: 16px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 2px solid #eee;
-            background: #fff;
-        }
-        .badge-red {
-            border-color: #FFD6D6;
-            color: #E94B4B;
-            background: #FFF6F6;
-        }
-        .badge-yellow {
-            border-color: #FFF3C4;
-            color: #E9B94B;
-            background: #FFFCF2;
-        }
-        .badge-blue {
-            border-color: #C4E1FF;
-            color: #4B8FE9;
-            background: #F2F8FF;
-        }
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin: 16px auto 0 auto;
-            max-width: 900px;
-            padding-bottom: 8px;
-        }
-        .btn {
-            padding: 12px 32px;
-            border-radius: 8px;
-            border: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .back-button {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
+.map-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    background: none;
+}
+
+.map-section img {
+    max-width: 100%;
+    border-radius: 24px;
+    background: none;
+}
+
+.locations-section {
+    flex: 1.2;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.title h2 {
+    font-size: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.search-bar input {
+    padding: 8px 32px 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar .search-icon {
+    position: relative;
+    left: -28px;
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 16px 24px;
+    border: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.location-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.location-checkbox {
+    width: 22px;
+    height: 22px;
+    accent-color: #E94B4B;
+}
+
+.visitor-badge {
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 2px solid #eee;
+    background: #fff;
+}
+
+.badge-red {
+    border-color: #FFD6D6;
+    color: #E94B4B;
+    background: #FFF6F6;
+}
+
+.badge-yellow {
+    border-color: #FFF3C4;
+    color: #E9B94B;
+    background: #FFFCF2;
+}
+
+.badge-blue {
+    border-color: #C4E1FF;
+    color: #4B8FE9;
+    background: #F2F8FF;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto 0 auto;
+    max-width: 900px;
+    padding-bottom: 8px;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
 }
 
 .btn-back {
-  display: inline-block;
-  background-color: #bfbfbf;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  border: 3px solid transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .btn-back:hover {
-  background-color: #ffffff;
-  color: #bfbfbf;
-  border-color: #bfbfbf;
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
 }
-        .btn-next {
-            background: #E94B4B;
-            color: #fff;
-            box-shadow: 0 2px 8px #e94b4b33;
-            transition: background 0.2s;
-        }
-        .btn-next:hover {
-            background-color: #ffffff;
-            color: #dc393c;
-            border-color: #dc393c;
-        }
-        /* Responsive */
-        @media (max-width: 900px) {
-            .container {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 24px;
-            }
-            .nav-buttons {
-                flex-direction: column;
-                gap: 16px;
-                max-width: 100%;
-            }
-        }
+
+.btn-next {
+    background: #E94B4B;
+    color: #fff;
+    box-shadow: 0 2px 8px #e94b4b33;
+    transition: background 0.2s;
+}
+
+.btn-next:hover {
+    background-color: #ffffff;
+    color: #dc393c;
+    border-color: #dc393c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 16px;
+        max-width: 100%;
+    }
+}

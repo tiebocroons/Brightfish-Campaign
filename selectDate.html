@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,21 +18,22 @@
     }
   </style>
 </head>
+
 <body>
 
-<div class="progress-bar" data-step="1">
-        <div class="progress-step">1</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">2</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">3</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">4</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">5</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">6</div>
-    </div>
+  <div class="progress-bar" data-step="1">
+    <div class="progress-step">1</div>
+    <div class="progress-line"></div>
+    <div class="progress-step">2</div>
+    <div class="progress-line"></div>
+    <div class="progress-step">3</div>
+    <div class="progress-line"></div>
+    <div class="progress-step">4</div>
+    <div class="progress-line"></div>
+    <div class="progress-step">5</div>
+    <div class="progress-line"></div>
+    <div class="progress-step">6</div>
+  </div>
 
   <h1>Choose your campaign-week</h1>
   <p>Every campaign has a fixed date of 1 week, from Wednesday to Tuesday.</p>
@@ -92,7 +94,7 @@
   </div>
 
   <div class="button-container">
-    <a href="./planCampaign.html" class="btn-back">Back</a>    
+    <a href="./planCampaign.html" class="btn-back">Back</a>
     <a href="./Location.html" class="btn-next" id="btnNext">Next</a>
   </div>
 
@@ -118,10 +120,10 @@
       });
 
       // Fade-out transition for Next button
-      document.getElementById('btnNext').addEventListener('click', function(e) {
+      document.getElementById('btnNext').addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
-        setTimeout(function() {
+        setTimeout(function () {
           window.location.href = './Location.html';
         }, 500);
       });
@@ -129,4 +131,5 @@
   </script>
   <script src="Scripts/progressbar.js"></script>
 </body>
+
 </html>
