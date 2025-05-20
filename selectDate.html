@@ -94,7 +94,7 @@
   </div>
 
   <div class="button-container">
-    <a href="./planCampaign.html" class="btn-back">Back</a>
+    <a href="./planCampaign.html" class="btn-back" id="btnBack">Back</a>
     <a href="./Location.html" class="btn-next" id="btnNext">Next</a>
   </div>
 
@@ -125,6 +125,15 @@
         document.body.classList.add('fade-out');
         setTimeout(function () {
           window.location.href = './Location.html';
+        }, 500);
+      });
+
+      // Fade-out transition for Back button
+      document.getElementById('btnBack').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+          window.location.href = './planCampaign.html';
         }, 500);
       });
     });
