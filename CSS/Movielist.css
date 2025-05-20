@@ -355,7 +355,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/Afbeelding.png) no-repeat center;
+    background: url(/Assets/images/Movies/patsersPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 3;
     border-radius: 10px;
@@ -396,7 +396,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image.png) no-repeat center;
+    background: url(/Assets/images/Movies/mickey17Poster.jpg) no-repeat center;
     background-size: cover;
     z-index: 46;
     border-radius: 6.542px;
@@ -437,7 +437,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image2.png) no-repeat center;
+    background: url(/Assets/images/Movies/warfarePoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 54;
     border-radius: 6.542px;
@@ -478,7 +478,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image3.png) no-repeat center;
+    background: url(/Assets/images/Movies/thunderboltsPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 62;
     border-radius: 6.542px;
@@ -541,7 +541,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image4.png) no-repeat center;
+    background: url(/Assets/images/Movies/theLastShowgirlPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 7;
     border-radius: 6.542px;
@@ -581,7 +581,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image5.png) no-repeat center;
+    background: url(/Assets/images/Movies/sinnersPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 50;
     border-radius: 6.542px;
@@ -621,7 +621,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image6.png) no-repeat center;
+    background: url(/Assets/images/Movies/deathOfAUnicornPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 58;
     border-radius: 6.542px;
@@ -661,7 +661,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image7.png) no-repeat center;
+    background: url(/Assets/images/Movies/moonPandaPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 66;
     border-radius: 6.54px;
@@ -691,6 +691,74 @@ button {
     height: 292px;
     margin: 0 0 0 40px;
     z-index: 72;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px auto 0 auto;
+    max-width: 900px;
+    padding-bottom: 8px;
+    position: sticky;
+    bottom: 24px; /* Adjust as needed */
+    z-index: 100;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: -100px;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
+}
+
+.btn-next {
+  background-color: #dc393c;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: -100px;
+}
+.btn-next:hover {
+  background-color: #ffffff;
+  color: #dc393c;
+  border-color: #dc393c;
 }
 
 .wrapper-7 {
@@ -775,7 +843,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image\ 11.png) no-repeat center;
+    background: url(/Assets/images/Movies/sonic3Poster.jpg) no-repeat center;
     background-size: cover;
     z-index: 42;
     border-radius: 6.54px;
@@ -816,7 +884,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image\ 8.png) no-repeat center;
+    background: url(/Assets/images/Movies/missionImpossiblePoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 11;
     border-radius: 6.54px;
@@ -857,7 +925,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image9.png) no-repeat center;
+    background: url(/Assets/images/Movies/aMinecraftMoviePoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 34;
     border-radius: 6.54px;
@@ -898,7 +966,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(/Assets/images/Movies/image10.png) no-repeat center;
+    background: url(/Assets/images/Movies/mrKPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 38;
     border-radius: 6.54px;

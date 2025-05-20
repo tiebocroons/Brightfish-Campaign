@@ -1,0 +1,94 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 1280px;
+    height: 832px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.img {
+    position: relative;
+    width: 217px;
+    height: 217px;
+    margin: 164px 0 0 531px;
+    background: url(./assets/images/79124b3629e38600efbaca8c9c55bcb342ed4ee8.png)
+        no-repeat center;
+    background-size: contain;
+    z-index: 1;
+    overflow: visible auto;
+}
+.pic {
+    position: relative;
+    width: 186px;
+    height: 130px;
+    margin: 55px 0 0 15px;
+    background: url(./assets/images/24e902b3-e183-4814-a0fd-07451e573916.svg)
+        no-repeat center;
+    background-size: cover;
+    z-index: 2;
+}
+.text {
+    display: block;
+    position: relative;
+    height: 46px;
+    margin: 37px 0 0 262px;
+    color: #000000;
+    font-family: Days One, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45.826px;
+    text-align: left;
+    white-space: nowrap;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: relative;
+    width: 312px;
+    height: 74px;
+    margin: 111px 0 0 484px;
+    padding: 10px 10px 10px 10px;
+    background: #dc393c;
+    z-index: 3;
+    border-radius: 10px;
+}
+.text-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 29px;
+    color: #ffffff;
+    font-family: Lato, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+}
