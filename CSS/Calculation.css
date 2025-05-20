@@ -48,8 +48,25 @@ button {
     width: 132.46px;
     height: 177.922px;
     margin: 373px 0 0 295px;
-    background: url(./assets/images/51405bf6-c39d-4852-b695-1e146500a869.svg)
+    background: url(/Assets/images/Calculating/FishAnimation.svg)
         no-repeat center;
     background-size: cover;
     z-index: 2;
+    animation: fadeRotate 3s infinite;
+}
+
+/* Animation for .Moving_fish */
+@keyframes fadeRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
 }

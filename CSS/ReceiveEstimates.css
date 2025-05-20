@@ -403,17 +403,29 @@ button {
     text-align: left;
     z-index: 13;
 }
-.pic-4 {
+.Moving_fish {
     position: absolute;
-    width: 200px;
-    height: 0px;
-    top: 50%;
-    left: 326px;
-    background: url(./assets/images/5e47390c-e3ed-4519-a8a2-92bd79ac7526.png)
+    width: 434px;
+    height: 284px;
+    top: 25%;
+    left: 310px;
+    background: url(/Assets/images/ReceiveEstimates/Fish.svg)
         no-repeat center;
     background-size: cover;
-    transform: translate(0, -41500101.05%);
+    transform: translate(0, 100%);
+    animation: moveHorizontal 3s linear infinite;
 }
+
+/* Animation for .moving_fish */
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
 .group-4 {
     display: flex;
     align-items: center;
@@ -443,4 +455,28 @@ button {
     text-align: left;
     white-space: nowrap;
     z-index: 42;
+}
+.back-button {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.btn-back {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
 }
