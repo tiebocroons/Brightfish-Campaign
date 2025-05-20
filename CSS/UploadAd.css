@@ -1,3 +1,72 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto 0 auto;
+    max-width: 900px;
+    padding-bottom: 8px;
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
+}
+
+.btn-next {
+  background-color: #dc393c;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-next:hover {
+  background-color: #ffffff;
+  color: #dc393c;
+  border-color: #dc393c;
+}
+
+
 .upload-container {
             background: #fff;
             border-radius: 16px;

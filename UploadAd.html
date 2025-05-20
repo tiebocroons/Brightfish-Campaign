@@ -75,6 +75,27 @@
         <button class="btn btn-back" id="btnBack">Back</button>
         <button class="btn btn-next" id="btnNext">Next</button>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fade-out transition for Back button
+            document.getElementById('btnBack').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(function () {
+                    window.location.href = 'MovieList.html';
+                }, 500);
+            });
+
+            // Fade-out transition for Next button
+            document.getElementById('btnNext').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(function () {
+                    window.location.href = 'Summary.html';
+                }, 500);
+            });
+        });
+    </script>
     <script src="Scripts/progressbar.js"></script>
     <script src="Scripts/uploadAds.js"></script>
 </body>

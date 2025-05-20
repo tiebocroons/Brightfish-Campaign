@@ -14,6 +14,29 @@
     box-sizing: border-box;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.search-bar input {
+    padding: 8px 32px 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar .search-icon {
+    position: relative;
+    left: -28px;
+    color: #aaa;
+    font-size: 1.1rem;
+}
+
 input,
 select,
 textarea,
@@ -347,7 +370,7 @@ button {
     background: #f3f3f2;
     z-index: 2;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-5 {
@@ -388,7 +411,7 @@ button {
     background: #f3f3f2;
     z-index: 45;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-6 {
@@ -429,7 +452,7 @@ button {
     background: #f3f3f2;
     z-index: 53;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-4 {
@@ -470,7 +493,7 @@ button {
     background: #f3f3f2;
     z-index: 61;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-7 {
@@ -533,7 +556,7 @@ button {
     background: #f3f3f2;
     z-index: 6;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-6 {
@@ -573,7 +596,7 @@ button {
     background: #f3f3f2;
     z-index: 49;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-7 {
@@ -613,7 +636,7 @@ button {
     background: #f3f3f2;
     z-index: 57;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-8 {
@@ -653,7 +676,7 @@ button {
     background: #f3f3f2;
     z-index: 65;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-8 {
@@ -835,7 +858,7 @@ button {
     background: #f3f3f2;
     z-index: 41;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-9 {
@@ -876,7 +899,7 @@ button {
     background: #f3f3f2;
     z-index: 10;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-9 {
@@ -917,7 +940,7 @@ button {
     background: #f3f3f2;
     z-index: 33;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-a {
@@ -958,7 +981,7 @@ button {
     background: #f3f3f2;
     z-index: 37;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-b {
@@ -1009,7 +1032,7 @@ button {
     background: #f3f3f2;
     z-index: 14;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-c {
@@ -1049,7 +1072,7 @@ button {
     background: #f3f3f2;
     z-index: 18;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-a {
@@ -1101,7 +1124,7 @@ button {
     background: #f3f3f2;
     z-index: 23;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-b {
@@ -1153,7 +1176,7 @@ button {
     background: #f3f3f2;
     z-index: 28;
     border-radius: 10px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pic-e {
