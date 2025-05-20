@@ -7,20 +7,24 @@
 }
 
 /* Global Styles */
-*, .main-container {
-    overflow: hidden; /* Prevents content overflow */
+*,
+.main-container {
+    overflow: hidden;
+    /* Prevents content overflow */
 }
 
 .main-container,
 .main-container * {
-    box-sizing: border-box; /* Ensures consistent box model */
+    box-sizing: border-box;
+    /* Ensures consistent box model */
 }
 
 input,
 select,
 textarea,
 button {
-    outline: 0; /* Removes default outline */
+    outline: 0;
+    /* Removes default outline */
 }
 
 /* Main Container */
@@ -29,7 +33,8 @@ button {
     width: 1280px;
     height: 832px;
     margin: 0 auto;
-    background: #ffffff; /* White background */
+    background: #ffffff;
+    /* White background */
     overflow: hidden;
 }
 
@@ -39,9 +44,11 @@ button {
     width: 1073px;
     height: 682px;
     margin: 30px 0 0 94px;
-    background: #f9fafb; /* Light gray background */
+    background: #f9fafb;
+    /* Light gray background */
     z-index: 1;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px;
+    /* Rounded corners */
 }
 
 .box-2 {
@@ -50,7 +57,8 @@ button {
     height: 628px;
     top: 18px;
     left: 698px;
-    z-index: 2; /* Layering */
+    z-index: 2;
+    /* Layering */
 }
 
 .box-3 {
@@ -60,9 +68,11 @@ button {
     top: 0;
     left: 5px;
     font-size: 0px;
-    background: #ffffff; /* White background */
+    background: #ffffff;
+    /* White background */
     z-index: 2;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px;
+    /* Rounded corners */
 }
 
 /* Text Styles */
@@ -71,13 +81,16 @@ button {
     position: relative;
     height: 46px;
     margin: 18px 0 0 18px;
-    color: #000000; /* Black text */
+    color: #000000;
+    /* Black text */
     font-family: Days One, var(--default-font-family);
-    font-size: 36px; /* Large font size */
+    font-size: 36px;
+    /* Large font size */
     font-weight: 400;
     line-height: 45.826px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     z-index: 6;
 }
 
@@ -86,13 +99,16 @@ button {
     position: relative;
     height: 16px;
     margin: 8px 0 0 18px;
-    color: #000000; /* Black text */
+    color: #000000;
+    /* Black text */
     font-family: Lato, var(--default-font-family);
-    font-size: 13px; /* Small font size */
+    font-size: 13px;
+    /* Small font size */
     font-weight: 300;
     line-height: 15.733px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     z-index: 7;
 }
 
@@ -102,7 +118,8 @@ button {
     height: 524px;
     top: 104px;
     left: 0;
-    border-radius: 25px; /* Rounded corners */
+    border-radius: 25px;
+    /* Rounded corners */
 }
 
 /* Section Styles */
@@ -112,11 +129,15 @@ button {
     height: 111px;
     margin: 22px 0 0 23px;
     font-size: 0px;
-    background: #ffffff; /* White background */
-    border: 1px solid #bfbfbf; /* Light gray border */
+    background: #ffffff;
+    /* White background */
+    border: 1px solid #bfbfbf;
+    /* Light gray border */
     z-index: 3;
-    overflow: visible auto; /* Allows scrolling if content overflows */
-    border-radius: 10px; /* Rounded corners */
+    overflow: visible auto;
+    /* Allows scrolling if content overflows */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 .section-2 {
@@ -124,10 +145,13 @@ button {
     width: 294px;
     height: 47px;
     margin: 15px 0 0 23px;
-    background: #ffffff; /* White background */
-    border: 1px solid #c5c5c5; /* Light gray border */
+    background: #ffffff;
+    /* White background */
+    border: 1px solid #c5c5c5;
+    /* Light gray border */
     z-index: 11;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 /* Highlighted Text */
@@ -136,13 +160,17 @@ button {
     position: relative;
     height: 29px;
     margin: 33px 0 0 37px;
-    color: #dc393c; /* Red text */
+    color: #dc393c;
+    /* Red text */
     font-family: Lato, var(--default-font-family);
-    font-size: 24px; /* Medium font size */
-    font-weight: 700; /* Bold text */
+    font-size: 24px;
+    /* Medium font size */
+    font-weight: 700;
+    /* Bold text */
     line-height: 29px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     z-index: 4;
 }
 
@@ -151,13 +179,16 @@ button {
     position: relative;
     height: 16px;
     margin: 12px 0 0 80px;
-    color: #646464; /* Gray text */
+    color: #646464;
+    /* Gray text */
     font-family: Lato, var(--default-font-family);
-    font-size: 13px; /* Small font size */
+    font-size: 13px;
+    /* Small font size */
     font-weight: 300;
     line-height: 15.733px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     z-index: 5;
 }
 
@@ -183,8 +214,7 @@ button {
     height: 19.414px;
     top: 13px;
     left: 11px;
-    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg) no-repeat center;
     background-size: cover;
     z-index: 13;
 }
@@ -224,8 +254,7 @@ button {
     height: 19.414px;
     top: 14px;
     left: 11px;
-    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg) no-repeat center;
     background-size: cover;
     z-index: 18;
 }
@@ -283,8 +312,7 @@ button {
     height: 19.414px;
     top: 15px;
     left: 11px;
-    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg) no-repeat center;
     background-size: cover;
     z-index: 23;
 }
@@ -324,8 +352,7 @@ button {
     height: 19.414px;
     top: 16px;
     left: 11px;
-    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/SummaryCheckmark.svg) no-repeat center;
     background-size: cover;
     z-index: 28;
 }
@@ -336,10 +363,13 @@ button {
     width: 294px;
     height: 47px;
     margin: 17px 0 0 22px;
-    background: #dc393c; /* Red background */
+    background: #dc393c;
+    /* Red background */
     z-index: 30;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); /* Subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    /* Subtle shadow */
 }
 
 .text-a {
@@ -349,14 +379,19 @@ button {
     position: absolute;
     height: 19px;
     top: 14px;
-    left: calc(50% - 62px); /* Centers text */
-    color: #ffffff; /* White text */
+    left: calc(50% - 62px);
+    /* Centers text */
+    color: #ffffff;
+    /* White text */
     font-family: Lato, var(--default-font-family);
-    font-size: 16px; /* Medium font size */
-    font-weight: 700; /* Bold text */
+    font-size: 16px;
+    /* Medium font size */
+    font-weight: 700;
+    /* Bold text */
     line-height: 19px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Prevents text wrapping */
     z-index: 31;
 }
 
@@ -368,9 +403,11 @@ button {
     width: 255px;
     height: 26px;
     margin: 8px 0 0 42px;
-    color: #797373; /* Gray text */
+    color: #797373;
+    /* Gray text */
     font-family: Lato, var(--default-font-family);
-    font-size: 11px; /* Small font size */
+    font-size: 11px;
+    /* Small font size */
     font-weight: 300;
     line-height: 13.313px;
     text-align: center;
@@ -590,8 +627,7 @@ button {
     height: 24px;
     top: 103px;
     left: 1px;
-    background: url(/Assets/images/Estimated_pricing/Target_audience.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/Target_audience.svg) no-repeat center;
     background-size: cover;
     z-index: 67;
 }
@@ -620,8 +656,7 @@ button {
     height: 24px;
     top: 201px;
     left: 1px;
-    background: url(/Assets/images/Estimated_pricing/Selected_movies.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/Selected_movies.svg) no-repeat center;
     background-size: cover;
     z-index: 66;
 }
@@ -650,8 +685,7 @@ button {
     height: 24px;
     top: 379px;
     left: 1px;
-    background: url(/Assets/images/Estimated_pricing/Ad_position.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/Ad_position.svg) no-repeat center;
     background-size: cover;
     z-index: 65;
 }
@@ -680,8 +714,7 @@ button {
     height: 24px;
     top: 509px;
     left: 1px;
-    background: url(/Assets/images/Estimated_pricing/Campaign_icon.svg)
-        no-repeat center;
+    background: url(/Assets/images/Estimated_pricing/Campaign_icon.svg) no-repeat center;
     background-size: cover;
     z-index: 41;
 }
