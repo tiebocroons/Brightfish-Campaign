@@ -118,35 +118,148 @@
                 <button class="btn btn-next" id="btnNext">Next</button>
         </div>
         <!-- Add this just before </body> -->
-<div id="movieModal" class="movie-modal" style="display:none;">
+         <div id="movieModal" class="movie-modal" style="display:none;">
     <div class="movie-modal-content">
         <span class="movie-modal-close" id="closeModal">&times;</span>
-        <h2 id="modalTitle"></h2>
-        <div id="modalImage" style="margin: 16px 0;"></div>
-        <p id="modalDescription"></p>
-        <button id="modalSelectBtn" class="btn btn-next">Select</button>
+        <div class="movie-modal-body">
+            <div class="movie-modal-image" id="modalImage"></div>
+            <div class="movie-modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="movie-modal-meta">
+                    <div class="movie-modal-meta-item">
+                        <span class="movie-modal-icon" style="color:#e74c3c;">&#128197;</span>
+                        <span class="movie-modal-meta-label">Release date:</span>
+                        <span id="modalRelease"></span>
+                    </div>
+                    <div class="movie-modal-meta-item">
+                        <span class="movie-modal-icon" style="color:#e74c3c;">&#127917;</span>
+                        <span class="movie-modal-meta-label">Genre</span>
+                        <span id="modalGenre"></span>
+                    </div>
+                </div>
+                <button id="modalSelectBtn" class="btn btn-next" style="margin-top:32px;float:right;">Add</button>
+            </div>
+        </div>
     </div>
 </div>
-    <script>
+    // ...existing code...
+<script>
 document.addEventListener("DOMContentLoaded", () => {
     // Movie info data (add more as needed)
-    const movieInfo = {
+     const movieInfo = {
         "Patsers": {
             title: "Patsers",
-            description: "A fast-paced Belgian crime comedy about four friends who get in over their heads.",
-            image: '<div class="img-5" style="width:100%;height:180px;margin:auto;"></div>'
+            description: "When a young journalist stumbles upon an old, unsent letter in a second-hand bookstore, she embarks on a journey to uncover the truth behind a decades-old love story. As she pieces together the past, she discovers secrets that could change the lives of those involved—if she dares to reveal them.",
+            image: '<img src="Assets/images/Movies/patsersPoster.jpg" alt="Patsers Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "19th of February 2025",
+            genre: "Drama, Action"
         },
         "Mickey 17": {
             title: "Mickey 17",
             description: "A sci-fi adventure based on the novel by Edward Ashton.",
-            image: '<div class="img-6" style="width:100%;height:180px;margin:auto;"></div>'
+            image: '<img src="Assets/images/Movies/mickey17Poster.jpg" alt="Mickey 17 Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Science Fiction"
         },
         "Warfare": {
             title: "Warfare",
-            description: "An action-packed war drama.",
-            image: '<div class="pic-4" style="width:100%;height:180px;margin:auto;"></div>'
+            description: "A gripping war drama that follows a group of soldiers as they navigate the chaos and camaraderie of the battlefield.",
+            image: '<img src="Assets/images/Movies/warfarePoster.jpg" alt="Warfare Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "2025",
+            genre: "Action, War"
         },
-        // ...add more movies as needed...
+        "Thunderbolts": {
+            title: "Thunderbolts",
+            description: "A team of antiheroes is assembled for a high-stakes government mission.",
+            image: '<img src="Assets/images/Movies/thunderboltsPoster.jpg" alt="Thunderbolts Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "May 2025",
+            genre: "Action, Adventure"
+        },
+        "The Last Showgirl": {
+            title: "The Last Showgirl",
+            description: "A former Las Vegas showgirl returns to the stage for one final performance.",
+            image: '<img src="Assets/images/Movies/lastshowgirlPoster.jpg" alt="The Last Showgirl Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Drama"
+        },
+        "Sinners": {
+            title: "Sinners",
+            description: "A dark thriller exploring the secrets of a small town.",
+            image: '<img src="Assets/images/Movies/sinnersPoster.jpg" alt="Sinners Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Thriller"
+        },
+        "Death of a Unicorn": {
+            title: "Death of a Unicorn",
+            description: "A surreal comedy about a mythical creature and the chaos that follows its discovery.",
+            image: '<img src="Assets/images/Movies/unicornPoster.jpg" alt="Death of a Unicorn Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Comedy, Fantasy"
+        },
+        "Moon Le Panda": {
+            title: "Moon Le Panda",
+            description: "An animated adventure featuring a panda on a quest to the moon.",
+            image: '<img src="Assets/images/Movies/moonlepandaPoster.jpg" alt="Moon Le Panda Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Animation, Family"
+        },
+        "Sonic 3": {
+            title: "Sonic 3",
+            description: "Sonic and friends return for another high-speed adventure.",
+            image: '<img src="Assets/images/Movies/sonic3Poster.jpg" alt="Sonic 3 Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "December 2024",
+            genre: "Animation, Adventure"
+        },
+        "Mission: Impossible": {
+            title: "Mission: Impossible",
+            description: "Ethan Hunt faces his most dangerous mission yet.",
+            image: '<img src="Assets/images/Movies/miPoster.jpg" alt="Mission: Impossible Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Action, Thriller"
+        },
+        "Minecraft": {
+            title: "Minecraft",
+            description: "An epic adventure set in the world of Minecraft.",
+            image: '<img src="Assets/images/Movies/minecraftPoster.jpg" alt="Minecraft Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "April 2025",
+            genre: "Adventure, Family"
+        },
+        "Mr.K": {
+            title: "Mr.K",
+            description: "A mysterious figure shakes up a quiet neighborhood.",
+            image: '<img src="Assets/images/Movies/mrkPoster.jpg" alt="Mr.K Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Drama"
+        },
+        "Locked": {
+            title: "Locked",
+            description: "A suspenseful thriller about a group trapped in a locked building.",
+            image: '<img src="Assets/images/Movies/lockedPoster.jpg" alt="Locked Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Thriller"
+        },
+        "Retro": {
+            title: "Retro",
+            description: "A nostalgic journey through the pop culture of the 80s.",
+            image: '<img src="Assets/images/Movies/retroPoster.jpg" alt="Retro Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Comedy"
+        },
+        "Final Destination": {
+            title: "Final Destination",
+            description: "A new chapter in the iconic horror franchise.",
+            image: '<img src="Assets/images/Movies/finaldestinationPoster.jpg" alt="Final Destination Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Horror"
+        },
+        "Lilo & Stitch": {
+            title: "Lilo & Stitch",
+            description: "A live-action adaptation of the beloved animated classic.",
+            image: '<img src="Assets/images/Movies/liloandstitchPoster.jpg" alt="Lilo & Stitch Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "TBA",
+            genre: "Family, Adventure"
+        }
     };
 
     // Modal elements
@@ -155,6 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitle = document.getElementById('modalTitle');
     const modalImage = document.getElementById('modalImage');
     const modalDescription = document.getElementById('modalDescription');
+    const modalRelease = document.getElementById('modalRelease');
+    const modalGenre = document.getElementById('modalGenre');
     const modalSelectBtn = document.getElementById('modalSelectBtn');
 
     let lastClickedMovie = null;
@@ -176,6 +291,8 @@ document.addEventListener("DOMContentLoaded", () => {
             modalTitle.textContent = movieInfo[movieName].title;
             modalDescription.textContent = movieInfo[movieName].description;
             modalImage.innerHTML = movieInfo[movieName].image;
+            modalRelease.textContent = movieInfo[movieName].release || '';
+            modalGenre.textContent = movieInfo[movieName].genre || '';
             modal.style.display = 'flex';
             lastClickedMovie = this;
         });
@@ -213,6 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
+// ...existing code...
 <script src="/Scripts/progressbar.js"></script>
     </body>
     

@@ -777,6 +777,7 @@ button {
   transition: all 0.3s ease;
   cursor: pointer;
   margin-right: -100px;
+  width: 100px;
 }
 .btn-next:hover {
   background-color: #ffffff;
@@ -1186,31 +1187,85 @@ button {
     background: #fff8f8;
 }
 
+/* ...existing code... */
 .movie-modal {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     left: 0; top: 0; width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.3);
+    display: flex; align-items: center; justify-content: center;
+}
+.movie-modal-content {
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    padding: 32px 32px 32px 32px;
+    max-width: 900px;
+    width: 90vw;
+    position: relative;
+}
+.movie-modal-close {
+    position: absolute;
+    top: 18px; right: 24px;
+    font-size: 2rem;
+    color: #c0392b;
+    cursor: pointer;
+    font-weight: bold;
+}
+.movie-modal-body {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+.movie-modal-image {
+    min-width: 260px;
+    max-width: 260px;
+    height: 340px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.movie-modal-content {
-    background: #fff;
-    border-radius: 16px;
-    padding: 32px 24px;
-    max-width: 400px;
-    width: 90vw;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.15);
-    position: relative;
-    text-align: center;
+.movie-modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-.movie-modal-close {
-    position: absolute;
-    top: 16px; right: 20px;
-    font-size: 2rem;
-    color: #E94B4B;
-    cursor: pointer;
+.movie-modal-info h2 {
+    font-family: 'Days One', sans-serif;
+    font-size: 2.2rem;
+    margin: 0 0 16px 0;
+}
+.movie-modal-info p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    margin: 0 0 24px 0;
+}
+.movie-modal-meta {
+    display: flex;
+    gap: 48px;
+    margin: 24px 0 0 0;
+}
+.movie-modal-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+.movie-modal-meta-label {
+    font-weight: bold;
+    margin-right: 4px;
+}
+.movie-modal-icon {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+@media (max-width: 700px) {
+    .movie-modal-body { flex-direction: column; align-items: stretch; }
+    .movie-modal-image { max-width: 100%; min-width: 0; width: 100%; height: 220px; }
 }
 
 .section-a {
