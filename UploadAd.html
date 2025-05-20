@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Upload Zone</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" />
-        <link rel="stylesheet" href="CSS/general.css" />
-        <link rel="stylesheet" href="CSS/UploadAd.css" />
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="progress-bar" data-step="4">
-        <div class="progress-step">1</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">2</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">3</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">4</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">5</div>
-        <div class="progress-line"></div>
-        <div class="progress-step">6</div>
-    </div>
-            <span class="text-7">Upload your ad</span>
-            <div class="section-2">
-                <div class="group-2">
-                    <div class="wrapper">
-                        <div class="group-3">
-                            <span class="text-8">Upload existing ad</span>
-                        </div>
-                        <span class="text-9">Generate ad from images</span>
-                    </div>
-                    <div class="wrapper-2">
-                        <div class="box-2">
-                            <div class="pic-3"></div>
-                            <span class="text-a">Drag and drop your ad file here</span
-                            ><span class="text-b">or click to browse files</span>
-                            <div class="wrapper-3">
-                                <span class="text-c">Select files</span>
-                            </div>
-                        </div>
-                        <div class="group-4">
-                            <div class="section-3">
-                                <div class="img-5"></div>
-                                <span class="text-d">Ad Requirements</span>
-                            </div>
-                            <span class="text-e"
-                                >File format: MOV only<br />Maximum duration: 38 seconds<br />Recommended
-                                resolution: 1920x1080 (Full HD)<br />Recommended audio: Stereo,
-                                48KHz</span
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div class="img-6"></div>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload your ad</title>
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/UploadAd.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+                <div class="progress-bar" data-step="4">
+                <div class="progress-step">1</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">2</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">3</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">4</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">5</div>
+                <div class="progress-line"></div>
+                <div class="progress-step">6</div>
             </div>
-            <div class="section-4">
-                <div class="group-5"><span class="text-f">Back</span></div>
-                <div class="box-3"><span class="text-10">Next</span></div>
-            </div>
+    <h1 style="text-align:center; margin-top:32px;">Upload your ad</h1>
+    <div class="upload-container">
+        <div class="tab-header">
+            <button class="tab-btn active" id="tab-ad">Upload existing ad</button>
+            <button class="tab-btn" id="tab-images">Generate ad from images</button>
         </div>
-        <script src="/Scripts/progressbar.js"></script>
-    </body>
+        <div class="tab-content" id="content-ad">
+            <form id="ad-upload-form">
+                <div class="dropzone" id="ad-dropzone">
+                    <div style="font-size:2.5rem; margin-bottom:8px;">&#8682;</div>
+                    <div>Drag and drop your ad file here<br><span style="font-size:0.95rem;">or click to browse files</span></div>
+                    <input type="file" id="ad-file-input" accept=".mov" style="display:none;">
+                    <button type="button" class="select-files-btn" id="ad-select-btn">Select files</button>
+                </div>
+                <div class="ad-requirements">
+                    <strong>&#8505; Ad Requirements</strong>
+                    <ul>
+                        <li>File format: MOV only</li>
+                        <li>Maximum duration: 38 seconds</li>
+                        <li>Recommended resolution: 1920×1080 (Full HD)</li>
+                        <li>Recommended audio: Stereo, 48KHz</li>
+                    </ul>
+                </div>
+                <ul class="uploaded-files" id="ad-uploaded-list"></ul>
+            </form>
+        </div>
+        <div class="tab-content" id="content-images" style="display:none;">
+            <form id="images-upload-form">
+                <div class="dropzone" id="images-dropzone">
+                    <div style="font-size:2.5rem; margin-bottom:8px;">&#8682;</div>
+                    <div>Drag and drop 3 images here<br><span style="font-size:0.95rem;">or click to browse files</span></div>
+                    <input type="file" id="images-file-input" accept="image/*" multiple style="display:none;">
+                    <button type="button" class="select-files-btn" id="images-select-btn">Select images</button>
+                </div>
+                <div class="ad-requirements">
+                    <strong>&#8505; Image Requirements</strong>
+                    <ul>
+                        <li>Exactly 3 images required</li>
+                        <li>Recommended resolution: 1920×1080 (Full HD)</li>
+                        <li>Accepted formats: JPG, PNG</li>
+                    </ul>
+                </div>
+                <ul class="uploaded-files" id="images-uploaded-list"></ul>
+            </form>
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <button class="btn btn-back" id="btnBack">Back</button>
+        <button class="btn btn-next" id="btnNext">Next</button>
+    </div>
+    <script src="Scripts/progressbar.js"></script>
+    <script src="Scripts/uploadAds.js"></script>
+</body>
 </html>

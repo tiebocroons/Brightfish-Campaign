@@ -1017,7 +1017,7 @@ button {
     width: 165px;
     height: 193px;
     margin: 16px 0 0 16px;
-    background: url(./assets/images/51873265845ceec1f2548dfe4aa28642c856587f.png) no-repeat center;
+    background: url(/Assets/images/Movies/lockedPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 15;
     border-radius: 6.54px;
@@ -1069,7 +1069,7 @@ button {
     height: 193px;
     top: 0;
     left: 0;
-    background: url(./assets/images/13066321-0314-403a-a90c-2cfd0cfe8181.png) no-repeat center;
+    background: url(/Assets/images/Movies/retroPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 20;
     border-radius: 6.54px;
@@ -1121,7 +1121,7 @@ button {
     height: 193px;
     top: 0;
     left: 0;
-    background: url(./assets/images/b7d9612d-0c60-4159-b918-d7b7091964e5.png) no-repeat center;
+    background: url(/Assets/images/Movies/finalDestinationBloodlinesPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 25;
     border-radius: 6.54px;
@@ -1173,7 +1173,7 @@ button {
     height: 193px;
     top: 0;
     left: 0;
-    background: url(./assets/images/eb403ff08a2bd40077f296a3f99790115a0fc4bf.png) no-repeat center;
+    background: url(/Assets/images/Movies/lilo&StitchPoster.jpg) no-repeat center;
     background-size: cover;
     z-index: 30;
     border-radius: 6.54px;
