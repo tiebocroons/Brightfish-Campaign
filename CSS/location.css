@@ -16,6 +16,7 @@ body {
 }
 
 .map-section {
+    margin-top: 24px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -229,11 +230,18 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #E94B4B;
+  background: grey;
   border: 2px solid #fff;
   border-radius: 50%;
   transform: translate(-50%, -100%);
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   z-index: 2;
+  margin-top: 24px;
+}
+
+.map-pin.highlighted {
+  background: #E94B4B;
+  border-color: red;
+  box-shadow: 0 0 10px #3d67a2;
 }

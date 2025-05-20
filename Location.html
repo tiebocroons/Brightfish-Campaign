@@ -35,54 +35,54 @@
         <div class="map-section">
             <img src="Assets/images/Location_page/Belgium.svg" alt="Belgium map"
                 style="max-width: 100%; border-radius: 24px; background: none;">
-                <div class="map-pin" style="left: 23%; top: 15%;" title="Kinepolis Antwerp"></div>
-                <div class="map-pin" style="left: 19%; top: 29%;" title="Kinepolis Brussels"></div>
-                <div class="map-pin" style="left: 15%; top: 21%;" title="Kinepolis Ghent"></div>
-                <div class="map-pin" style="left: 30%; top: 24%;" title="Kinepolis Hasselt"></div>
-                <div class="map-pin" style="left: 10%; top: 26%;" title="Kinepolis Kortrijk"></div>
-                <div class="map-pin" style="left: 8%; top: 15%;" title="Kinepolis Bruges"></div>
+                <div class="map-pin" data-location="antwerp" style="left: 23%; top: 15%;" title="Kinepolis Antwerp"></div>
+                <div class="map-pin" data-location="brussels" style="left: 19%; top: 29%;" title="Kinepolis Brussels"></div>
+                <div class="map-pin" data-location="ghent" style="left: 15%; top: 21%;" title="Kinepolis Ghent"></div>
+                <div class="map-pin" data-location="hasselt" style="left: 30%; top: 24%;" title="Kinepolis Hasselt"></div>
+                <div class="map-pin" data-location="kortrijk" style="left: 10%; top: 26%;" title="Kinepolis Kortrijk"></div>
+                <div class="map-pin" data-location="bruges" style="left: 8%; top: 15%;" title="Kinepolis Bruges"></div>
                 <!-- Add more pins for each location -->
         </div>
         <div class="locations-section">
             <div class="location-list">
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="antwerp">
                         Kinepolis Antwerp
                     </label>
                     <span class="visitor-badge badge-red">+2.500 visitors / month</span>
                 </div>
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="brussels">
                         Kinepolis Brussels
                     </label>
                     <span class="visitor-badge badge-red">+2.500 visitors / month</span>
                 </div>
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="ghent">
                         Kinepolis Ghent
                     </label>
                     <span class="visitor-badge badge-yellow">+1.000 visitors / month</span>
                 </div>
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="hasselt">
                         Kinepolis Hasselt
                     </label>
                     <span class="visitor-badge badge-yellow">+1.000 visitors / month</span>
                 </div>
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="kortrijk">
                         Kinepolis Kortrijk
                     </label>
                     <span class="visitor-badge badge-blue">+500 visitors / month</span>
                 </div>
                 <div class="location-item">
                     <label class="location-label">
-                        <input type="checkbox" name="location" class="location-checkbox">
+                        <input type="checkbox" name="location" class="location-checkbox" data-location="bruges">
                         Kinepolis Bruges
                     </label>
                     <span class="visitor-badge badge-blue">+500 visitors / month</span>
@@ -116,6 +116,7 @@
         });
     </script>
     <script src="Scripts/progressbar.js"></script>
+    <script src="Scripts/locationPins.js"></script>
 </body>
 
 </html>
