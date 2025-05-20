@@ -36,105 +36,184 @@
                 </div>
                 <span class="text-9">Choose your desired movies for your campaign</span>
             </div>
-            <div class="section-4">
-                <div class="wrapper-2">
-                    <div class="img-5"></div>
-                    <span class="text-a">Patsers</span>
-                </div>
-                <div class="section-5">
-                    <div class="img-6"></div>
-                    <span class="text-b">Mickey 17</span>
-                </div>
-                <div class="wrapper-3">
-                    <div class="pic-4"></div>
-                    <span class="text-c">Warfare</span>
-                </div>
-                <div class="wrapper-4">
-                    <div class="img-7"></div>
-                    <span class="text-d">Thunderbolts</span>
-                </div>
-                <div class="pic-5"></div>
-            </div>
-            <div class="group-2">
-                <div class="group-3">
-                    <div class="pic-6"></div>
-                    <span class="text-e">The Last Showgirl</span>
-                </div>
-                <div class="section-6">
-                    <div class="pic-7"></div>
-                    <span class="text-f">Sinners</span>
-                </div>
-                <div class="wrapper-5">
-                    <div class="img-8"></div>
-                    <span class="text-10">Death of a Unicorn</span>
-                </div>
-                <div class="wrapper-6">
-                    <div class="pic-8"></div>
-                    <span class="text-11">Moon Le Panda</span>
-                </div>
-            </div>
-            <div class="section-7">
-                <div class="box-3">
-                    <div class="img-9"></div>
-                    <span class="text-14">Sonic 3</span>
-                </div>
-                <div class="group-4">
-                    <div class="pic-9"></div>
-                    <span class="text-15">Mission: Impossible</span>
-                </div>
-                <div class="section-8">
-                    <div class="pic-a"></div>
-                    <span class="text-16">Minecraft</span>
-                </div>
-                <div class="box-4">
-                    <div class="pic-b"></div>
-                    <span class="text-17">Mr.K</span>
-                </div>
-            </div>
-            <div class="wrapper-8">
-                <div class="box-5">
-                    <div class="pic-c"></div>
-                    <span class="text-18">Locked</span>
-                </div>
-                <div class="box-6">
-                    <div class="img-a"><div class="pic-d"></div></div>
-                    <span class="text-19">Retro</span>
-                </div>
-                <div class="section-9">
-                    <div class="img-b"><div class="img-c"></div></div>
-                    <span class="text-1a">Final Destination</span>
-                </div>
-                <div class="section-a">
-                    <div class="pic-e"><div class="img-d"></div></div>
-                    <span class="text-1b">Lilo & Stitch</span>
-                </div>
+            <!-- ...existing code... -->
+<div class="section-4">
+    <div class="wrapper-2 movie-selectable">
+        <div class="img-5"></div>
+        <span class="text-a">Patsers</span>
+    </div>
+    <div class="section-5 movie-selectable">
+        <div class="img-6"></div>
+        <span class="text-b">Mickey 17</span>
+    </div>
+    <div class="wrapper-3 movie-selectable">
+        <div class="pic-4"></div>
+        <span class="text-c">Warfare</span>
+    </div>
+    <div class="wrapper-4 movie-selectable">
+        <div class="img-7"></div>
+        <span class="text-d">Thunderbolts</span>
+    </div>
+    <div class="pic-5 movie-selectable"></div>
+</div>
+<div class="group-2">
+    <div class="group-3 movie-selectable">
+        <div class="pic-6"></div>
+        <span class="text-e">The Last Showgirl</span>
+    </div>
+    <div class="section-6 movie-selectable">
+        <div class="pic-7"></div>
+        <span class="text-f">Sinners</span>
+    </div>
+    <div class="wrapper-5 movie-selectable">
+        <div class="img-8"></div>
+        <span class="text-10">Death of a Unicorn</span>
+    </div>
+    <div class="wrapper-6 movie-selectable">
+        <div class="pic-8"></div>
+        <span class="text-11">Moon Le Panda</span>
+    </div>
+</div>
+<div class="section-7">
+    <div class="box-3 movie-selectable">
+        <div class="img-9"></div>
+        <span class="text-14">Sonic 3</span>
+    </div>
+    <div class="group-4 movie-selectable">
+        <div class="pic-9"></div>
+        <span class="text-15">Mission: Impossible</span>
+    </div>
+    <div class="section-8 movie-selectable">
+        <div class="pic-a"></div>
+        <span class="text-16">Minecraft</span>
+    </div>
+    <div class="box-4 movie-selectable">
+        <div class="pic-b"></div>
+        <span class="text-17">Mr.K</span>
+    </div>
+</div>
+<div class="wrapper-8">
+    <div class="box-5 movie-selectable">
+        <div class="pic-c"></div>
+        <span class="text-18">Locked</span>
+    </div>
+    <div class="box-6 movie-selectable">
+        <div class="img-a"><div class="pic-d"></div></div>
+        <span class="text-19">Retro</span>
+    </div>
+    <div class="section-9 movie-selectable">
+        <div class="img-b"><div class="img-c"></div></div>
+        <span class="text-1a">Final Destination</span>
+    </div>
+    <div class="section-a movie-selectable">
+        <div class="pic-e"><div class="img-d"></div></div>
+        <span class="text-1b">Lilo & Stitch</span>
+    </div>
+</div>
+<!-- ...existing code... -->
             </div>
         </div>
         <div class="nav-buttons">
                 <button class="btn btn-back" id="btnBack">Back</button>
                 <button class="btn btn-next" id="btnNext">Next</button>
         </div>
-        <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Fade-out transition for Back button
-            document.getElementById('btnBack').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(function () {
-                    window.location.href = 'Location.html';
-                }, 500);
-            });
+        <!-- Add this just before </body> -->
+<div id="movieModal" class="movie-modal" style="display:none;">
+    <div class="movie-modal-content">
+        <span class="movie-modal-close" id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalImage" style="margin: 16px 0;"></div>
+        <p id="modalDescription"></p>
+        <button id="modalSelectBtn" class="btn btn-next">Select</button>
+    </div>
+</div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Movie info data (add more as needed)
+    const movieInfo = {
+        "Patsers": {
+            title: "Patsers",
+            description: "A fast-paced Belgian crime comedy about four friends who get in over their heads.",
+            image: '<div class="img-5" style="width:100%;height:180px;margin:auto;"></div>'
+        },
+        "Mickey 17": {
+            title: "Mickey 17",
+            description: "A sci-fi adventure based on the novel by Edward Ashton.",
+            image: '<div class="img-6" style="width:100%;height:180px;margin:auto;"></div>'
+        },
+        "Warfare": {
+            title: "Warfare",
+            description: "An action-packed war drama.",
+            image: '<div class="pic-4" style="width:100%;height:180px;margin:auto;"></div>'
+        },
+        // ...add more movies as needed...
+    };
 
-            // Fade-out transition for Next button
-            document.getElementById('btnNext').addEventListener('click', function (e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(function () {
-                    window.location.href = 'UploadAd.html';
-                }, 500);
-            });
+    // Modal elements
+    const modal = document.getElementById('movieModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalSelectBtn = document.getElementById('modalSelectBtn');
+
+    let lastClickedMovie = null;
+
+    // Movie selection highlight with modal and deselect on second click
+    document.querySelectorAll('.movie-selectable').forEach(el => {
+        el.addEventListener('click', function (e) {
+            // If already selected, deselect on click (no modal)
+            if (this.classList.contains('selected')) {
+                this.classList.remove('selected');
+                return;
+            }
+
+            // Get movie name from the span inside
+            const movieName = this.querySelector('span') ? this.querySelector('span').textContent.trim() : null;
+            if (!movieName || !movieInfo[movieName]) return;
+
+            // Show modal with info
+            modalTitle.textContent = movieInfo[movieName].title;
+            modalDescription.textContent = movieInfo[movieName].description;
+            modalImage.innerHTML = movieInfo[movieName].image;
+            modal.style.display = 'flex';
+            lastClickedMovie = this;
         });
-    </script>
+    });
+
+    // Modal close
+    closeModal.onclick = () => { modal.style.display = 'none'; lastClickedMovie = null; };
+    window.onclick = (e) => { if (e.target === modal) { modal.style.display = 'none'; lastClickedMovie = null; } };
+
+    // Modal select button
+    modalSelectBtn.onclick = () => {
+        if (lastClickedMovie) {
+            lastClickedMovie.classList.add('selected');
+        }
+        modal.style.display = 'none';
+        lastClickedMovie = null;
+    };
+
+    // Fade-out transition for Back button
+    document.getElementById('btnBack').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+            window.location.href = 'Location.html';
+        }, 500);
+    });
+
+    // Fade-out transition for Next button
+    document.getElementById('btnNext').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+            window.location.href = 'UploadAd.html';
+        }, 500);
+    });
+});
+</script>
+<script src="/Scripts/progressbar.js"></script>
     </body>
-    <script src="/Scripts/progressbar.js"></script>
+    
 </html>
