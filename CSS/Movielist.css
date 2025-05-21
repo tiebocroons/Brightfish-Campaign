@@ -1319,3 +1319,15 @@ button {
     white-space: nowrap;
     z-index: 31;
 }
+
+/* Page transition fade-out effect */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
