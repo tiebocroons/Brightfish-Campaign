@@ -188,3 +188,30 @@ body {
     pointer-events: none;
   }
 }
+
+@media (max-width: 600px) {
+    .upload-container .tab-header {
+    font-size: 13px !important;
+  }
+  .upload-container .tab-btn {
+    font-size: 12px !important;
+    padding: 12px 0 !important;
+  }
+  .nav-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .btn-back,
+  .btn-next {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    min-width: 120px;
+    font-size: 15px;
+    padding: 10px 10px;
+    display: inline-block;
+    position: static;
+  }
+}
