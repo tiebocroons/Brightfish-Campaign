@@ -55,17 +55,23 @@
             I give Brightfish permission to contact me by email with information, updates, or offers. I understand that I can unsubscribe at any time.
         </label>
 
-        <button class="wrapper-3" type="submit"><span class="text-c">Send</span></button>
+        <button class="Button-send" type="submit">Send</button>
     </form>
     <div class="pic-3"></div>
 </div>
             <div class="Moving_fish"></div>
-            <div class="button-container">
-                <a href="./planCampaign.html" class="btn-back" id="btnBack">Back</a>
-            </div>
-
+            <button href="planCampaign.html" class="btn-back" id="btnBack">Back</button>
         </div>
     </div>
+    <script>
+        document.getElementById('btnBack').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = 'planCampaign.html';
+            }, 500);
+        });
+    </script>
     <script src="Scripts/progressbar.js"></script>
 </body>
 
