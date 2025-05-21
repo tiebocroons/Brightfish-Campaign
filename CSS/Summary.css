@@ -168,8 +168,15 @@ html, body {
 .summary-price {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
+    align-items: center;
+    margin: 0 auto 1.5rem auto;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 32px 16px 20px 16px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 .summary-price-range {
@@ -198,8 +205,16 @@ html, body {
 
 .summary-included-list li {
     font-size: 1rem;
-    margin-bottom: 0.3rem;
-    padding-left: 0;
+    margin-bottom: 0.8rem;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.summary-included-list img {
+    padding: 0px;
+    margin-right: 8px;
 }
 
 .summary-request {
