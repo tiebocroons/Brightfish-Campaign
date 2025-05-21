@@ -24,3 +24,45 @@ document.addEventListener('DOMContentLoaded', function() {
         updateProgressBar(Number(progressBar.dataset.step));
     }
 });
+
+  document.querySelector('#step1').addEventListener('mouseover', function () {
+    this.innerHTML= 'Date';
+  });
+  document.querySelector('#step1').addEventListener('mouseout', function () {
+    this.innerHTML= '1';
+  });
+
+  document.querySelector('#step2').addEventListener('mouseover', function () {
+    this.innerHTML= 'Location';
+  });
+  document.querySelector('#step2').addEventListener('mouseout', function () {
+    this.innerHTML= '2';
+  });
+
+  document.querySelector('#step3').addEventListener('mouseover', function () {
+    this.innerHTML= 'Movie';
+  });
+  document.querySelector('#step3').addEventListener('mouseout', function () {
+    this.innerHTML= '3';
+  });
+
+  document.querySelector('#step4').addEventListener('mouseover', function () {
+    this.innerHTML= 'Ad';
+  });
+  document.querySelector('#step4').addEventListener('mouseout', function () {
+    this.innerHTML= '4';
+  });
+
+  document.querySelector('#step5').addEventListener('mouseover', function () {
+    this.innerHTML= 'Summary';
+  });
+  document.querySelector('#step5').addEventListener('mouseout', function () {
+    this.innerHTML= '5';
+  });
+
+  document.querySelector('#step6').addEventListener('mouseover', function () {
+    this.innerHTML= 'Contact';
+  });
+  document.querySelector('#step6').addEventListener('mouseout', function () {
+    this.innerHTML= '6';
+  });
