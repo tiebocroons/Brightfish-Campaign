@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="CSS/Movielist.css" />
         <link rel="stylesheet" href="/CSS/general.css">
     </head>
@@ -128,17 +130,17 @@
                 <p id="modalDescription"></p>
                 <div class="movie-modal-meta">
                     <div class="movie-modal-meta-item">
-                        <span class="movie-modal-icon" style="color:#e74c3c;">&#128197;</span>
+                        <i class="fa-solid fa-calendar-days" style="color: #e74c3c;"></i>
                         <span class="movie-modal-meta-label">Release date:</span>
                         <span id="modalRelease"></span>
                     </div>
                     <div class="movie-modal-meta-item">
-                        <span class="movie-modal-icon" style="color:#e74c3c;">&#127917;</span>
-                        <span class="movie-modal-meta-label">Genre</span>
+                        <i class="fa-solid fa-masks-theater" style="color: #e74c3c; font-size: 24px;"></i>
+                        <span class="movie-modal-meta-label">Genre:</span>
                         <span id="modalGenre"></span>
                     </div>
                 </div>
-                <button id="modalSelectBtn" class="btn btn-next" style="margin-top:32px;float:right;">Add</button>
+                <button id="modalSelectBtn" class="btn btn-add">Add</button>
             </div>
         </div>
     </div>
@@ -152,117 +154,116 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Patsers",
             description: "When a young journalist stumbles upon an old, unsent letter in a second-hand bookstore, she embarks on a journey to uncover the truth behind a decades-old love story. As she pieces together the past, she discovers secrets that could change the lives of those involved—if she dares to reveal them.",
             image: '<img src="Assets/images/Movies/patsersPoster.jpg" alt="Patsers Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "19th of February 2025",
+            release: "19 February 2025",
             genre: "Drama, Action"
         },
         "Mickey 17": {
             title: "Mickey 17",
-            description: "A sci-fi adventure based on the novel by Edward Ashton.",
+            description: "Mickey 17 is an 'expendable', a disposable employee, on a human expedition sent to colonize the ice world Niflheim. After one iteration dies, a new body is regenerated with most of its memories intact.",
             image: '<img src="Assets/images/Movies/mickey17Poster.jpg" alt="Mickey 17 Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            release: "5 March 2025",
             genre: "Science Fiction"
         },
         "Warfare": {
             title: "Warfare",
-            description: "A gripping war drama that follows a group of soldiers as they navigate the chaos and camaraderie of the battlefield.",
+            description: "A platoon of American Navy SEALs in the home of an Iraqi family overwatches the movement of US forces through insurgent territory.",
             image: '<img src="Assets/images/Movies/warfarePoster.jpg" alt="Warfare Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "2025",
+            release: "9 April 2025",
             genre: "Action, War"
         },
         "Thunderbolts": {
             title: "Thunderbolts",
             description: "A skilled street racer and Interpol agent goes undercover to take down an international car smuggling ring. High-speed chases and explosive action follow as he risks everything to stop the criminals. A skilled street racer and Interpol agent goes undercover to take down an international car smuggling ring. ",
             image: '<img src="Assets/images/Movies/thunderboltsPoster.jpg" alt="Thunderbolts Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "May 2025",
+            release: "30 April 2025",
             genre: "Action, Adventure"
         },
         "The Last Showgirl": {
             title: "The Last Showgirl",
-            description: "A former Las Vegas showgirl returns to the stage for one final performance.",
-            image: '<img src="Assets/images/Movies/lastshowgirlPoster.jpg" alt="The Last Showgirl Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "Las Vegas showgirl Shelley is at a turning point in her life when her show suddenly comes to an end after thirty years. As a dancer in her fifties, she struggles with the continuation of her career. The show and her working family were her life, at the expense of her relationship with her daughter. In order to turn things around, Shelley will have to find herself again and make a decision about her future.",
+            image: '<img src="Assets/images/Movies/theLastShowgirlPoster.jpg" alt="The Last Showgirl Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "16 April 2025",
             genre: "Drama"
         },
         "Sinners": {
             title: "Sinners",
-            description: "A dark thriller exploring the secrets of a small town.",
+            description: "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
             image: '<img src="Assets/images/Movies/sinnersPoster.jpg" alt="Sinners Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            release: "16 April 2025",
             genre: "Thriller"
         },
         "Death of a Unicorn": {
             title: "Death of a Unicorn",
-            description: "A surreal comedy about a mythical creature and the chaos that follows its discovery.",
-            image: '<img src="Assets/images/Movies/unicornPoster.jpg" alt="Death of a Unicorn Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "Father-Daughter duo Elliott and Ridley hit a unicorn with their car and bring it to the wilderness retreat of a mega-wealthy pharmaceutical CEO.",
+            image: '<img src="Assets/images/Movies/deathOfAUnicornPoster.jpg" alt="Death of a Unicorn Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "9 April 2025",
             genre: "Comedy, Fantasy"
         },
         "Moon Le Panda": {
             title: "Moon Le Panda",
-            description: "An animated adventure featuring a panda on a quest to the moon.",
-            image: '<img src="Assets/images/Movies/moonlepandaPoster.jpg" alt="Moon Le Panda Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "Tian is twelve years old when he is sent to his grandmother's due to his poor school results. Far from the city, in the mysterious Chinese mountains, he secretly becomes friend with a panda he names Moon. This marks the beginning ...",
+            image: '<img src="Assets/images/Movies/moonPandaPoster.jpg" alt="Moon Le Panda Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "16 April 2025",
             genre: "Animation, Family"
         },
         "Sonic 3": {
             title: "Sonic 3",
-            description: "Sonic and friends return for another high-speed adventure.",
+            description: "Sonic, Knuckles and Tails reunite to face a powerful new enemy, Shadow, a mysterious villain with powers unlike any they've ever seen. Team Sonic must find an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
             image: '<img src="Assets/images/Movies/sonic3Poster.jpg" alt="Sonic 3 Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "December 2024",
-            genre: "Animation, Adventure"
+            release: "25 December 2024",
+            genre: "Animation, Action"
         },
         "Mission: Impossible": {
             title: "Mission: Impossible",
-            description: "Ethan Hunt faces his most dangerous mission yet.",
-            image: '<img src="Assets/images/Movies/miPoster.jpg" alt="Mission: Impossible Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "Our lives are the sum of our choices. Tom Cruise is Ethan Hunt in Mission: Impossible - The Final Reckoning.",
+            image: '<img src="Assets/images/Movies/missionImpossiblePoster.jpg" alt="Mission: Impossible Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "21 May 2025",
             genre: "Action, Thriller"
         },
         "Minecraft": {
             title: "Minecraft",
-            description: "An epic adventure set in the world of Minecraft.",
-            image: '<img src="Assets/images/Movies/minecraftPoster.jpg" alt="Minecraft Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "April 2025",
+            description: "Four misfits are suddenly pulled through a mysterious portal into a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a quest with an unexpected, expert crafter. ",
+            image: '<img src="Assets/images/Movies/aMinecraftMoviePoster.jpg" alt="Minecraft Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "2 April 2025",
             genre: "Adventure, Family"
         },
         "Mr.K": {
             title: "Mr.K",
-            description: "A mysterious figure shakes up a quiet neighborhood.",
+            description: "Mr. K, a traveling magician, finds himself in a Kafkaesque nightmare when he can’t find the exit of the hotel, he has slept in. His attempts to get out only pull him deeper, entangling him further with the hotel and its curious inhabitants.",
             image: '<img src="Assets/images/Movies/mrkPoster.jpg" alt="Mr.K Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            release: "7 May 2025",
             genre: "Drama"
         },
         "Locked": {
             title: "Locked",
-            description: "A suspenseful thriller about a group trapped in a locked building.",
+            description: "The troubles of Eddie, a young thief, begin when he breaks into a luxury SUV. He soon discovers that he has been drawn into a deadly game set up by William, a self-proclaimed vigilante. As Eddie desperately tries to escape, he realizes that his situation is far more dangerous than he first thought…",
             image: '<img src="Assets/images/Movies/lockedPoster.jpg" alt="Locked Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            release: "16 April 2025",
             genre: "Thriller"
         },
         "Retro": {
             title: "Retro",
-            description: "A nostalgic journey through the pop culture of the 80s.",
+            description: "The film follows a gangster who, after promising his wife a peaceful life, struggles to reform while facing his violent past, all while navigating a love-action story. explores themes of love, laughter, and war, as well as the struggle of a man trying to reform and break free from his past.",
             image: '<img src="Assets/images/Movies/retroPoster.jpg" alt="Retro Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            release: "2 May 2025",
             genre: "Comedy"
         },
         "Final Destination": {
             title: "Final Destination",
-            description: "A new chapter in the iconic horror franchise.",
-            image: '<img src="Assets/images/Movies/finaldestinationPoster.jpg" alt="Final Destination Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "When Stefanie is plagued by the same violent nightmare, the student returns home to search for the one person who can save her family from the horrible fate that awaits her.",
+            image: '<img src="Assets/images/Movies/finalDestinationBloodlinesPoster.jpg" alt="Final Destination Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "14 May 2025",
             genre: "Horror"
         },
         "Lilo & Stitch": {
             title: "Lilo & Stitch",
-            description: "A live-action adaptation of the beloved animated classic.",
-            image: '<img src="Assets/images/Movies/liloandstitchPoster.jpg" alt="Lilo & Stitch Poster" style="width:100%;height:100%;object-fit:cover;">',
-            release: "TBA",
+            description: "“Lilo & Stitch” is the super funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps restore her broken family.",
+            image: '<img src="Assets/images/Movies/lilo&StitchPoster.jpg" alt="Lilo & Stitch Poster" style="width:100%;height:100%;object-fit:cover;">',
+            release: "21 May 2025",
             genre: "Family, Adventure"
         }
     };
 
-    // Modal elements
     const modal = document.getElementById('movieModal');
     const closeModal = document.getElementById('closeModal');
     const modalTitle = document.getElementById('modalTitle');
@@ -274,20 +275,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastClickedMovie = null;
 
-    // Movie selection highlight with modal and deselect on second click
     document.querySelectorAll('.movie-selectable').forEach(el => {
         el.addEventListener('click', function (e) {
-            // If already selected, deselect on click (no modal)
+           
             if (this.classList.contains('selected')) {
                 this.classList.remove('selected');
                 return;
             }
 
-            // Get movie name from the span inside
+           
             const movieName = this.querySelector('span') ? this.querySelector('span').textContent.trim() : null;
             if (!movieName || !movieInfo[movieName]) return;
 
-            // Show modal with info
+          
             modalTitle.textContent = movieInfo[movieName].title;
             modalDescription.textContent = movieInfo[movieName].description;
             modalImage.innerHTML = movieInfo[movieName].image;
@@ -298,11 +298,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Modal close
+    
     closeModal.onclick = () => { modal.style.display = 'none'; lastClickedMovie = null; };
     window.onclick = (e) => { if (e.target === modal) { modal.style.display = 'none'; lastClickedMovie = null; } };
 
-    // Modal select button
+    
     modalSelectBtn.onclick = () => {
         if (lastClickedMovie) {
             lastClickedMovie.classList.add('selected');
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
         lastClickedMovie = null;
     };
 
-    // Fade-out transition for Back button
+    
     document.getElementById('btnBack').addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     });
 
-    // Fade-out transition for Next button
+    
     document.getElementById('btnNext').addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
-// ...existing code...
+
 <script src="/Scripts/progressbar.js"></script>
     </body>
     

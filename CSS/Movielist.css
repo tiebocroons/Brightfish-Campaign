@@ -783,6 +783,24 @@ button {
   border-color: #dc393c;
 }
 
+.btn-add{
+    position: absolute;
+    background-color: #dc393c;
+  display: inline-block;
+  width: 80px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 292px;
+}
+
 .wrapper-7 {
     display: flex;
     align-items: center;
@@ -1238,7 +1256,7 @@ button {
     margin: 0 0 16px 0;
 }
 .movie-modal-info p {
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     font-size: 1.1rem;
     margin: 0 0 24px 0;
 }
@@ -1252,6 +1270,7 @@ button {
     align-items: center;
     gap: 8px;
     font-size: 1.1rem;
+    font-family: sans-serif;
 }
 .movie-modal-meta-label {
     font-weight: bold;
