@@ -13,76 +13,82 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="progress-bar" data-step="5">
-            <div id="step1" class="progress-step">1</div>
-            <div class="progress-line"></div>
-            <div id="step2" class="progress-step">2</div>
-            <div class="progress-line"></div>
-            <div id="step3" class="progress-step">3</div>
-            <div class="progress-line"></div>
-            <div id="step4" class="progress-step">4</div>
-            <div class="progress-line"></div>
-            <div id="step5" class="progress-step">5</div>
-            <div class="progress-line"></div>
+    <div class="progress-bar" data-step="5">
+        <div id="step1" class="progress-step">1</div>
+        <div class="progress-line"></div>
+        <div id="step2" class="progress-step">2</div>
+        <div class="progress-line"></div>
+        <div id="step3" class="progress-step">3</div>
+        <div class="progress-line"></div>
+        <div id="step4" class="progress-step">4</div>
+        <div class="progress-line"></div>
+        <div id="step5" class="progress-step">5</div>
+        <div class="progress-line"></div>
         <div id="step6" class="progress-step">6</div>
-  </div>
-        <div class="box">
-            <div class="section-3">
-                <div class="group-2">
-                    <span class="text-7">Estimated Price</span><span class="text-8">Based on your campaign
-                        selections</span>
+    </div>
+    <div class="main-container">
+        <div class="summary-layout">
+            <section class="summary-details">
+                <h1 class="summary-title">Campaign Details</h1>
+                <p class="summary-desc">Review the details of your cinema advertising campaign</p>
+                <div class="summary-block">
+                    <div class="summary-movies-section">
+                        <h2 class="summary-movies-title">Selected Movies</h2>
+                        <div class="movie-poster-row">
+                            <div class="movie-poster">
+                                <img src="Assets/images/Movies/patsersPoster.jpg" alt="Patsers poster">
+                            </div>
+                            <div class="movie-poster">
+                                <img src="Assets/images/Movies/thunderboltsPoster.jpg" alt="Thunderbolts poster">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-meta-row">
+                        <div class="summary-meta">
+                            <span class="summary-meta-label">Campaign Schedule</span>
+                            <span class="summary-meta-value">13-05-2025 until 19-05-2025</span>
+                        </div>
+                        <div class="summary-meta">
+                            <span class="summary-meta-label">Location(s)</span>
+                            <span class="summary-meta-value">Kinepolis Antwerp, Kinepolis Ghent</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-9">Campaign Details</span><span class="text-a">Review the details of your cinema
-                    advertising campaign</span>
-                <div class="pic-4">
-                    <div class="wrapper">
-                        <span class="text-b">€13.700 - €18.000</span><span class="text-c">Estimated price range</span>
-                    </div>
-                    <span class="text-d">What’s included:</span>
-                    <div class="wrapper-2">
-                        <div class="pic-5"></div>
-                        <span class="text-e">Ad placement during 2 selected movie(s)</span>
-                    </div>
-                    <div class="section-4">
-                        <div class="pic-6"></div>
-                        <span class="text-f">1 ad position</span>
-                    </div>
-                    <div class="box-2">
-                        <span class="text-10">1 week of screening</span>
-                        <div class="img-4"></div>
-                    </div>
-                    <div class="group-3">
-                        <span class="text-11">Ad duration of 38 seconds</span>
-                        <div class="pic-7"></div>
-                    </div>
-                    <div class="wrapper-3">
-                        <span class="text-12">Request Estimate</span>
-                    </div>
-                    <span class="text-13">A Brightfish representative will contact you with a<br />detailed
-                        quote based on your selections.</span>
+            </section>
+            <aside class="summary-estimate">
+                <span class="text-7">Estimated Price</span>
+                <span class="text-8">Based on your campaign selections</span>
+                <div class="summary-price">
+                    <span class="summary-price-range">€13.700 - €18.000</span>
+                    <span class="summary-price-label">Estimated price range</span>
                 </div>
-                <div class="pic-9"></div>
-                <span class="text-16">Selected Movies</span>
-                <div class="group-4">
-                    <div class="img-5"></div>
-                    <div class="pic-a"></div>
+                <span class="summary-included-title">What’s included:</span>
+                <ul class="summary-included-list">
+                    <li>Ad placement during 2 selected movie(s)</li>
+                    <li>1 ad position</li>
+                    <li>1 week of screening</li>
+                    <li>Ad duration of 38 seconds</li>
+                </ul>
+                <div class="summary-request">
+                    <span>Request Estimate</span>
                 </div>
-            </div>
-            <div class="img-6"></div>
-            <div class="pic-c"></div>
-            <span class="text-19">Campaign Schedule</span><span class="text-1a">Location(s)</span>
-            <div class="group-6">
-                <span class="text-1b">13-05-2025 until 19-05-2025</span>
-            </div>
-            <div class="box-3">
-                <span class="text-1c">Kinepolis Antwerp, Kinepolis Ghent</span>
-            </div>
+                <span class="summary-contact">
+                    A Brightfish representative will contact you with a<br />detailed quote based on your selections.
+                </span>
+            </aside>
         </div>
-        <div class="pic-d"></div>
+        <div class="summary-back-btn">
+            <button class="back-btn" id="backBtn">Back</button>
+        </div>
     </div>
-    <div class="group-7"><span class="text-1d">Back</span></div>
-    </div>
+    <script src="/Scripts/progressbar.js"></script>
+    <script>
+        document.getElementById('backBtn').onclick = function() {
+            window.location.href = 'UploadAd.html';
+        };
+        document.querySelector('.summary-request').onclick = function() {
+            window.location.href = 'ReceiveEstimates.html';
+        };
+    </script>
 </body>
-<script src="/Scripts/progressbar.js"></script>
 </html>
