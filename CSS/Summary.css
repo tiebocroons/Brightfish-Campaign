@@ -271,6 +271,30 @@ html, body {
     color: #bbb;
 }
 
+.btn-back {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    left: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-back:hover {
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
+  }
+
+
 @media (max-width: 1100px) {
     .summary-layout {
         flex-direction: column;

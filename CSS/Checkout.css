@@ -29,27 +29,28 @@ button {
     background: #ffffff;
     overflow: hidden;
 }
+
 .img {
     position: relative;
     width: 217px;
     height: 217px;
     margin: 164px 0 0 531px;
-    background: url(./assets/images/79124b3629e38600efbaca8c9c55bcb342ed4ee8.png)
-        no-repeat center;
+    background: url(/Assets/images/Checkout/Vector\ 1.svg) no-repeat center;
     background-size: contain;
     z-index: 1;
     overflow: visible auto;
 }
+
 .pic {
     position: relative;
     width: 186px;
     height: 130px;
     margin: 55px 0 0 15px;
-    background: url(./assets/images/24e902b3-e183-4814-a0fd-07451e573916.svg)
-        no-repeat center;
+    background: url(./assets/images/24e902b3-e183-4814-a0fd-07451e573916.svg) no-repeat center;
     background-size: cover;
     z-index: 2;
 }
+
 .text {
     display: block;
     position: relative;
@@ -63,7 +64,8 @@ button {
     text-align: left;
     white-space: nowrap;
 }
-.section {
+
+.button-new {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,21 +76,32 @@ button {
     height: 74px;
     margin: 111px 0 0 484px;
     padding: 10px 10px 10px 10px;
-    background: #dc393c;
-    z-index: 3;
-    border-radius: 10px;
-}
-.text-2 {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 29px;
+    background-color: #dc393c;
+    display: inline-block;
     color: #ffffff;
     font-family: Lato, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 4;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button-new:hover {
+    background-color: #ffffff;
+    color: #dc393c;
+    border-color: #dc393c;
+}
+
+/* Page transition fade-out effect */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
 }

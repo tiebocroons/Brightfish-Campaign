@@ -345,7 +345,7 @@ button {
     z-index: 12;
     border-radius: 12px;
 }
-.wrapper-3 {
+.Button-send {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,10 +355,22 @@ button {
     width: 87px;
     height: 46px;
     margin: 86px 0 0 271px;
-    padding: 10px 10px 10px 10px;
-    background: #dc393c;
-    z-index: 15;
+    background-color: #dc393c;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Lato, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
     border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffffff;
+    color: #dc393c;
+    border-color: #dc393c;
 }
 .text-c {
     flex-shrink: 0;
@@ -373,18 +385,6 @@ button {
     text-align: left;
     white-space: nowrap;
     z-index: 16;
-}
-.pic-3 {
-    position: absolute;
-    width: 23.186px;
-    height: 25px;
-    top: 522px;
-    left: 40px;
-    background: url(./assets/images/7bb10ceb-3703-478e-a41f-bf2a9e666d88.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 14;
-    border-radius: 10px;
 }
 .text-d {
     display: flex;
@@ -462,7 +462,10 @@ button {
   left: 40px;
 }
 .btn-back {
-    display: inline-block;
+    position: relative;
+    top: 595px;
+    left: -40px;
+    display: flex;
     background-color: #bfbfbf;
     color: #ffffff;
     font-size: 16px;
@@ -479,4 +482,15 @@ button {
     background-color: #ffffff;
     color: #bfbfbf;
     border-color: #bfbfbf;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
