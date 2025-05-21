@@ -1,6 +1,6 @@
 :root {
     --default-font-family: 'Inter', Arial, sans-serif;
-    --main-bg: #fafbfc;
+    --main-bg: white;
     --block-bg: #fff;
     --radius: 16px;
     --primary: #111;

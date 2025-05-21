@@ -1191,6 +1191,7 @@ button {
     border-radius: 12px;
     transition: box-shadow 0.2s, border 0.2s, background 0.2s;
     border: 2px solid transparent;
+    background-color: white;
 }
 .movie-selectable.selected,
 .movie-selectable:active {
@@ -1348,3 +1349,4 @@ button {
     pointer-events: none;
   }
 }
+
