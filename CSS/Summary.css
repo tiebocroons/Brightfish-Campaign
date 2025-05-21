@@ -256,6 +256,45 @@ html, body {
     color: #bbb;
 }
 
+.btn-back {
+    display: inline-block;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-back:hover {
+    background-color: #ffffff;
+    color: #bfbfbf;
+    border-color: #bfbfbf;
+  }
+  
+  .btn-next {
+    background-color: #dc393c;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-next:hover {
+    background-color: #ffffff;
+    color: #dc393c;
+    border-color: #dc393c;
+  }
+
 @media (max-width: 1100px) {
     .summary-layout {
         flex-direction: column;
