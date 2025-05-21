@@ -386,18 +386,6 @@ button:hover {
     white-space: nowrap;
     z-index: 16;
 }
-.pic-3 {
-    position: absolute;
-    width: 23.186px;
-    height: 25px;
-    top: 522px;
-    left: 40px;
-    background: url(./assets/images/7bb10ceb-3703-478e-a41f-bf2a9e666d88.svg)
-        no-repeat center;
-    background-size: cover;
-    z-index: 14;
-    border-radius: 10px;
-}
 .text-d {
     display: flex;
     align-items: flex-start;
