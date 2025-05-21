@@ -78,11 +78,15 @@ section {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.3s ease;
+
 
 }
 
 .cta-button:hover {
-  background-color: #b93232;
+  background-color: #fff;
+  color: #d43b3b;
+  border: 2px solid #d43b3b;
 }
 
 @media (max-width: 768px) {
