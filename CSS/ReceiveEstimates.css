@@ -463,8 +463,8 @@ button:hover {
 }
 .btn-back {
     position: relative;
-    top: 595px; /* Matches the margin-top of the Send button */
-    left: -40px; /* Keeps it aligned to the left */
+    top: 595px;
+    left: -40px;
     display: flex;
     background-color: #bfbfbf;
     color: #ffffff;
@@ -484,7 +484,6 @@ button:hover {
     border-color: #bfbfbf;
 }
 
-/* Page transition fade-out effect */
 .fade-out {
   animation: fadeOut 0.5s forwards;
 }
