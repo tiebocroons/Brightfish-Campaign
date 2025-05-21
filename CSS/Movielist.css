@@ -801,6 +801,12 @@ button {
   margin-top: 292px;
 }
 
+.btn-add:hover {
+  background-color: #ffffff;
+  color: #dc393c;
+  border-color: #dc393c;
+}
+
 .wrapper-7 {
     display: flex;
     align-items: center;
