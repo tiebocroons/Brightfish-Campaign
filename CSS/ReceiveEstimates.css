@@ -29,6 +29,7 @@ button {
     background: #ffffff;
     overflow: hidden;
 }
+
 .box {
     position: relative;
     width: 1280px;
@@ -36,17 +37,18 @@ button {
     margin: 32px 0 0 0;
     z-index: 40;
 }
+
 .pic {
     position: absolute;
     width: 2.58%;
     height: 100%;
     top: 0;
     left: 3.91%;
-    background: url(./assets/images/bcee29ca-bcf8-4968-b3c3-e623eea3bd97.svg)
-        no-repeat center;
+    background: url(./assets/images/bcee29ca-bcf8-4968-b3c3-e623eea3bd97.svg) no-repeat center;
     background-size: 100% 100%;
     z-index: 24;
 }
+
 .text {
     display: flex;
     align-items: flex-start;
@@ -64,66 +66,67 @@ button {
     white-space: nowrap;
     z-index: 25;
 }
+
 .img {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 0;
     left: 279px;
-    background: url(./assets/images/49d26ddf-7f08-48f1-b773-0eaaef359ef1.svg)
-        no-repeat center;
+    background: url(./assets/images/49d26ddf-7f08-48f1-b773-0eaaef359ef1.svg) no-repeat center;
     background-size: cover;
     z-index: 27;
     border-radius: 50%;
 }
+
 .pic-2 {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 0;
     left: 508px;
-    background: url(./assets/images/7287651b-81a0-4274-8d70-b138ca9ba323.svg)
-        no-repeat center;
+    background: url(./assets/images/7287651b-81a0-4274-8d70-b138ca9ba323.svg) no-repeat center;
     background-size: cover;
     z-index: 30;
     border-radius: 50%;
 }
+
 .img-2 {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 0;
     left: 737px;
-    background: url(./assets/images/e4213e2c-72f6-4ebc-8c93-f7f333fea32c.svg)
-        no-repeat center;
+    background: url(./assets/images/e4213e2c-72f6-4ebc-8c93-f7f333fea32c.svg) no-repeat center;
     background-size: cover;
     z-index: 33;
     border-radius: 50%;
 }
+
 .img-3 {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 0;
     left: 966px;
-    background: url(./assets/images/7b66674f-a40f-41d0-aa40-5369a8b6c763.svg)
-        no-repeat center;
+    background: url(./assets/images/7b66674f-a40f-41d0-aa40-5369a8b6c763.svg) no-repeat center;
     background-size: cover;
     z-index: 36;
     border-radius: 50%;
 }
+
 .img-4 {
     position: absolute;
     width: 33px;
     height: 33px;
     top: 0;
     left: 1195px;
-    background: url(./assets/images/295371df-1a33-4d88-8cca-6146da601712.svg)
-        no-repeat center;
+    background: url(./assets/images/295371df-1a33-4d88-8cca-6146da601712.svg) no-repeat center;
     background-size: cover;
     z-index: 39;
     border-radius: 50%;
 }
+
 .text-2 {
     display: flex;
     align-items: flex-start;
@@ -141,6 +144,7 @@ button {
     white-space: nowrap;
     z-index: 28;
 }
+
 .text-3 {
     display: flex;
     align-items: flex-start;
@@ -158,6 +162,7 @@ button {
     white-space: nowrap;
     z-index: 31;
 }
+
 .text-4 {
     display: flex;
     align-items: flex-start;
@@ -175,6 +180,7 @@ button {
     white-space: nowrap;
     z-index: 34;
 }
+
 .text-5 {
     display: flex;
     align-items: flex-start;
@@ -192,6 +198,7 @@ button {
     white-space: nowrap;
     z-index: 37;
 }
+
 .text-6 {
     display: flex;
     align-items: flex-start;
@@ -209,6 +216,7 @@ button {
     white-space: nowrap;
     z-index: 40;
 }
+
 .wrapper {
     position: absolute;
     width: 1280px;
@@ -218,6 +226,7 @@ button {
     background: #161719;
     z-index: 21;
 }
+
 .group {
     position: relative;
     width: 1201px;
@@ -226,15 +235,22 @@ button {
     background: #dc393c;
     z-index: 22;
 }
+
 .group-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     position: relative;
-    width: 1144px;
+    gap: 20px;
+     width: 1144px;
     height: 701px;
     margin: 42px 0 0 40px;
     z-index: 41;
 }
+
 .box-2 {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 629px;
     height: 682px;
     top: 0;
@@ -245,6 +261,7 @@ button {
     z-index: 2;
     border-radius: 25px;
 }
+
 .text-7 {
     display: block;
     position: relative;
@@ -259,6 +276,7 @@ button {
     white-space: nowrap;
     z-index: 17;
 }
+
 .text-8 {
     display: block;
     position: relative;
@@ -273,6 +291,7 @@ button {
     white-space: nowrap;
     z-index: 18;
 }
+
 .text-9 {
     display: block;
     position: relative;
@@ -287,6 +306,7 @@ button {
     white-space: nowrap;
     z-index: 5;
 }
+
 .box-3 {
     position: relative;
     width: 544.408px;
@@ -297,6 +317,7 @@ button {
     z-index: 6;
     border-radius: 12px;
 }
+
 .text-a {
     display: block;
     position: relative;
@@ -311,6 +332,7 @@ button {
     white-space: nowrap;
     z-index: 8;
 }
+
 .wrapper-2 {
     position: relative;
     width: 544.408px;
@@ -321,6 +343,7 @@ button {
     z-index: 11;
     border-radius: 12px;
 }
+
 .text-b {
     display: block;
     position: relative;
@@ -335,6 +358,7 @@ button {
     white-space: nowrap;
     z-index: 10;
 }
+
 .group-3 {
     position: relative;
     width: 544.408px;
@@ -345,6 +369,7 @@ button {
     z-index: 12;
     border-radius: 12px;
 }
+
 .Button-send {
     display: flex;
     align-items: center;
@@ -367,11 +392,13 @@ button {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #ffffff;
     color: #dc393c;
     border-color: #dc393c;
 }
+
 .text-c {
     flex-shrink: 0;
     flex-basis: auto;
@@ -386,6 +413,7 @@ button:hover {
     white-space: nowrap;
     z-index: 16;
 }
+
 .text-d {
     display: flex;
     align-items: flex-start;
@@ -403,14 +431,14 @@ button:hover {
     text-align: left;
     z-index: 13;
 }
+
 .Moving_fish {
     position: absolute;
     width: 434px;
     height: 284px;
     top: 25%;
-    left: 310px;
-    background: url(/Assets/images/ReceiveEstimates/Fish.svg)
-        no-repeat center;
+    left: 250px;
+    background: url(/Assets/images/ReceiveEstimates/Fish.svg) no-repeat center;
     background-size: cover;
     transform: translate(0, 100%);
     animation: moveHorizontal 3s linear infinite;
@@ -418,12 +446,13 @@ button:hover {
 
 /* Animation for .moving_fish */
 @keyframes moveHorizontal {
-  0% {
-    transform: translateX(15%);
-  }
-  100% {
-    transform: translateX(-60%);
-  }
+    0% {
+        transform: translateX(25%);
+    }
+
+    100% {
+        transform: translateX(-60%);
+    }
 }
 
 .group-4 {
@@ -442,6 +471,7 @@ button:hover {
     z-index: 41;
     border-radius: 10px;
 }
+
 .text-e {
     flex-shrink: 0;
     flex-basis: auto;
@@ -456,15 +486,18 @@ button:hover {
     white-space: nowrap;
     z-index: 42;
 }
+
 .back-button {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
 }
+
 .btn-back {
     position: relative;
     top: 595px;
-    left: -40px;
+    width: 87px;
+    height: 46px;
     display: flex;
     background-color: #bfbfbf;
     color: #ffffff;
@@ -485,12 +518,92 @@ button:hover {
 }
 
 .fade-out {
-  animation: fadeOut 0.5s forwards;
+    animation: fadeOut 0.5s forwards;
 }
 
 @keyframes fadeOut {
-  to {
-    opacity: 0;
-    pointer-events: none;
-  }
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .group-2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        flex-direction: row-reverse;
+    }
+
+    .box-2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .pic,
+    .img,
+    .pic-2,
+    .img-2,
+    .img-3,
+    .img-4 {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    .text,
+    .text-2,
+    .text-3,
+    .text-4,
+    .text-5,
+    .text-6 {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .text-d {
+        padding-top: 12px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    .checkbox {
+        padding-top: 36px;
+    }
+
+    .Button-send {
+        display: flex;
+        width: 80%;
+        height: 40px;
+        margin: 20px auto;
+        font-size: 14px;
+    }
+
+    .Moving_fish {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+    }
+
+    .btn-back {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 14px;
+    }
 }
