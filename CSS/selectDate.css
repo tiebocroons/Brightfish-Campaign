@@ -213,3 +213,88 @@ p {
   color: #dc393c;
   border-color: #dc393c;
 }
+
+@media (max-width: 768px) {
+  /* Body */
+  body {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  /* Titels */
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Kalender */
+  .calendar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .day,
+  .weekday {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .calendar-header {
+    font-size: 1rem;
+  }
+
+  .calendar-header button {
+    font-size: 1.2rem;
+  }
+
+  /* Knoppen onderaan */
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    position: static;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .btn-back,
+  .btn-next {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .progress-step {
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .progress-line {
+    width: 10px;
+    height: 2px;
+    background-color: #ccc;
+  }
+}
