@@ -70,9 +70,18 @@ const tabAd = document.getElementById('tab-ad');
     }
 
     // Navigation buttons (example, adjust as needed)
-    document.getElementById('btnBack').onclick = function() {
-        window.location.href = 'MovieList.html';
-    };
-    document.getElementById('btnNext').onclick = function() {
-        window.location.href = 'Summary.html';
-    };
+     document.getElementById('btnBack').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = 'MovieList.html'; // Replace with the actual previous page URL
+            }, 500); // Match the duration of the fade-out animation
+        });
+
+        document.getElementById('btnNext').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = 'ReceiveEstimates.html'; // Replace with the actual next page URL
+            }, 500); // Match the duration of the fade-out animation
+        });

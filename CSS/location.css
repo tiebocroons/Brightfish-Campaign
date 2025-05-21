@@ -232,6 +232,104 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        max-width: 100vw;
+        padding: 0 4vw;
+        box-sizing: border-box;
+    }
+    @media (max-width: 600px) {
+    .map-section,
+    .map-section img,
+    .map-pin {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+}
+    .locations-section {
+        padding: 16px 0 16px 0;
+        gap: 10px;
+    }
+    .title {
+        font-size: 1.3rem;
+        margin: 0 0 12px 0;
+        gap: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .title h2 {
+        font-size: 1.3rem;
+    }
+    .search-bar {
+        padding-right: 0;
+        margin-top: 6px;
+    }
+    .location-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 10px;
+        gap: 8px;
+    }
+    .location-label {
+        font-size: 1rem;
+        gap: 8px;
+    }
+    .visitor-badge {
+        font-size: 0.9rem;
+        padding: 4px 10px;
+    }
+    .nav-buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin: 32px 0 0 0;
+        width: 100%;
+        max-width: 100vw;
+    }
+    .btn-back,
+    .btn-next {
+        width: 48%;
+        min-width: 120px;
+        font-size: 15px;
+        padding: 12px 0;
+        text-align: center;
+        box-sizing: border-box;
+        position: static;
+        margin: 0;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .btn-back {
+        margin-right: 2%;
+    }
+    .btn-next {
+        margin-left: 2%;
+    }
+    .back-button {
+        position: static;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+    }
+    .map-section img {
+        border-radius: 12px;
+    }
+}
+
 .map-pin {
   position: absolute;
   width: 20px;

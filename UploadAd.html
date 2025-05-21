@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload your ad</title>
+    <link rel="icon" href="Assets/images/Favicon/brightfish_logo.svg" type="image/svg" />
     <link rel="stylesheet" href="CSS/general.css">
     <link rel="stylesheet" href="CSS/UploadAd.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" />
@@ -40,7 +41,7 @@
                     <button type="button" class="select-files-btn" id="ad-select-btn">Select files</button>
                 </div>
                 <div class="ad-requirements">
-                    <strong>&#8505; Ad Requirements</strong>
+                    <strong><img src="Assets/images/UploadZone/error.svg" alt="info" width="20px">Ad Requirements</strong>
                     <ul>
                         <li>File format: MOV only</li>
                         <li>Maximum duration: 38 seconds</li>
@@ -60,7 +61,7 @@
                     <button type="button" class="select-files-btn" id="images-select-btn">Select images</button>
                 </div>
                 <div class="ad-requirements">
-                    <strong>&#8505; Image Requirements</strong>
+                    <strong><img src="Assets/images/UploadZone/error.svg" alt="info" width="20px">Image Requirements</strong>
                     <ul>
                         <li>Exactly 3 images required</li>
                         <li>Recommended resolution: 1920×1080 (Full HD)</li>
@@ -75,30 +76,6 @@
         <button class="btn btn-back" id="btnBack">Back</button>
         <button class="btn btn-next" id="btnNext">Next</button>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const btnBack = document.getElementById('btnBack');
-            const btnNext = document.getElementById('btnNext');
-
-            
-            btnBack.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(function () {
-                    window.location.href = 'MovieList.html';
-                }, 500);
-            });
-
-           
-            btnNext.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.body.classList.add('fade-out');
-                setTimeout(function () {
-                    window.location.href = 'Summary.html';
-                }, 500);
-            });
-        });
-    </script>
     <script src="Scripts/progressbar.js"></script>
     <script src="Scripts/uploadAds.js"></script>
 </body>
