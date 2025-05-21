@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Checkout</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" />
-        <link rel="stylesheet" href="index.css" />
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="img"><div class="pic"></div></div>
-            <span class="text">The estimate was sent to your mailbox</span>
-            <div class="section">
-                <span class="text-2">Plan another campaign</span>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Days+One:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" />
+    <link rel="stylesheet" href="/CSS/Checkout.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="img">
+            <div class="pic"></div>
         </div>
-    </body>
+        <span class="text">The estimate was sent to your mailbox</span>
+        <button class="button-new" id="btnPlanAnother">Plan another campaign
+        </button>
+    </div>
+    <script>
+        document.getElementById('btnPlanAnother').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = './Welcome.html';
+            }, 500);
+        });
+    </script>
+</body>
+
 </html>
