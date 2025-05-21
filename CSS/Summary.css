@@ -182,7 +182,7 @@ html, body {
 .summary-price-range {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent);
+    color: #E94B4B;
 }
 
 .summary-price-label {
@@ -220,7 +220,7 @@ html, body {
 .summary-request {
     margin: 1rem 0 0.5rem 0;
     display: inline-block;
-    background: var(--accent);
+    background: #E94B4B;
     color: #fff;
     padding: 10px 22px;
     border-radius: 8px;
@@ -230,13 +230,13 @@ html, body {
     transition: background 0.2s;
     user-select: none;
     text-align: center;
-    border: 2px solid var(--accent);
+    border: 2px solid #E94B4B;
 }
 
 .summary-request:hover {
     background: white;
-    color:#e74c3c;
-    border: 2px solid #e74c3c;
+    color: #E94B4B;
+    border: 2px solid #E94B4B;
 }
 
 .summary-contact {
