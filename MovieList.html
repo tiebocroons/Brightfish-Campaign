@@ -262,7 +262,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Modal elements
     const modal = document.getElementById('movieModal');
     const closeModal = document.getElementById('closeModal');
     const modalTitle = document.getElementById('modalTitle');
@@ -274,20 +273,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastClickedMovie = null;
 
-    // Movie selection highlight with modal and deselect on second click
     document.querySelectorAll('.movie-selectable').forEach(el => {
         el.addEventListener('click', function (e) {
-            // If already selected, deselect on click (no modal)
+           
             if (this.classList.contains('selected')) {
                 this.classList.remove('selected');
                 return;
             }
 
-            // Get movie name from the span inside
+           
             const movieName = this.querySelector('span') ? this.querySelector('span').textContent.trim() : null;
             if (!movieName || !movieInfo[movieName]) return;
 
-            // Show modal with info
+          
             modalTitle.textContent = movieInfo[movieName].title;
             modalDescription.textContent = movieInfo[movieName].description;
             modalImage.innerHTML = movieInfo[movieName].image;
@@ -298,11 +296,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Modal close
+    
     closeModal.onclick = () => { modal.style.display = 'none'; lastClickedMovie = null; };
     window.onclick = (e) => { if (e.target === modal) { modal.style.display = 'none'; lastClickedMovie = null; } };
 
-    // Modal select button
+    
     modalSelectBtn.onclick = () => {
         if (lastClickedMovie) {
             lastClickedMovie.classList.add('selected');
@@ -311,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
         lastClickedMovie = null;
     };
 
-    // Fade-out transition for Back button
+    
     document.getElementById('btnBack').addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
@@ -320,7 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     });
 
-    // Fade-out transition for Next button
+    
     document.getElementById('btnNext').addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
@@ -330,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
-// ...existing code...
+
 <script src="/Scripts/progressbar.js"></script>
     </body>
     
