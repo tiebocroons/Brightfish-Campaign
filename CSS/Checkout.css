@@ -105,3 +105,40 @@ button {
     pointer-events: none;
   }
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+    }
+
+    .pic {
+        width: 120px;
+        height: 90px;
+        margin: 20px auto;
+    }
+
+    .text {
+        font-size: 22px;
+        line-height: 32px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .button-new {
+        width: 90%;
+        height: 60px;
+        margin: 20px auto;
+        font-size: 14px;
+        align-items: center;
+    }
+}
