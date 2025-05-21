@@ -160,6 +160,18 @@ button {
     border-radius: 50%;
 }
 
+.movies-scroll-area {
+    max-height: 60vh; /* Adjust as needed */
+    overflow-y: auto;
+    margin-top: 16px;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+.movies-scroll-area::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
 .text-2 {
     display: flex;
     align-items: flex-start;
