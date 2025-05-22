@@ -74,7 +74,7 @@ const tabAd = document.getElementById('tab-ad');
             e.preventDefault();
             document.body.classList.add('fade-out');
             setTimeout(function () {
-                window.location.href = 'MovieList.html'; // Replace with the actual previous page URL
+                window.location.href = 'Movielist.html'; // Replace with the actual previous page URL
             }, 500); // Match the duration of the fade-out animation
         });
 
@@ -82,6 +82,6 @@ const tabAd = document.getElementById('tab-ad');
             e.preventDefault();
             document.body.classList.add('fade-out');
             setTimeout(function () {
-                window.location.href = 'ReceiveEstimates.html'; // Replace with the actual next page URL
+                window.location.href = 'Summary.html'; // Replace with the actual next page URL
             }, 500); // Match the duration of the fade-out animation
         });
