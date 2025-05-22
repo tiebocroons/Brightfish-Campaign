@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const steps = document.querySelectorAll('.progress-step');
     steps.forEach((step, idx) => {
         step.addEventListener('click', function() {
+            // Reset localStorage when any ball is clicked
+            localStorage.removeItem('selectedMovies');
+            // If you want to clear all localStorage, use: localStorage.clear();
+
             if (idx + 1 < currentStep) {
                 // Navigate to the correct page for this step
                 window.location.href = stepPages[idx];
