@@ -63,9 +63,10 @@
                 <span class="summary-included-title">What’s included:</span>
                 <ul class="summary-included-list">
                     <li><img src="Assets/images/Estimated_pricing/SummaryCheckmark.svg" alt="check">Ad placement during <span id="movie-count">0</span> selected movie(s)</li>
+                    <li><img src="Assets/images/Estimated_pricing/SummaryCheckmark.svg" alt="check">Ad placement in <span id="location-count">0</span> selected location(s)</li>
                     <li><img src="Assets/images/Estimated_pricing/SummaryCheckmark.svg" alt="check">1 ad position</li>
                     <li><img src="Assets/images/Estimated_pricing/SummaryCheckmark.svg" alt="check">1 week of screening</li>
-                    <li><img src="Assets/images/Estimated_pricing/SummaryCheckmark.svg" alt="check">Ad duration of 38 seconds</li>
+                    
                 </ul>
                 <div class="summary-request">
                     <span>Request Estimate</span>
@@ -136,6 +137,14 @@
             movieCountSpan.textContent = movies.length;
         }
     });
+
+    // Update location count in summary
+    const locationCountSpan = document.getElementById('location-count');
+    if (locationCountSpan) {
+        const locations = JSON.parse(localStorage.getItem('selectedLocations') || '[]');
+        locationCountSpan.textContent = locations.length;
+    }
+
     </script>
 </body>
 </html>
