@@ -87,12 +87,19 @@
     </div>
     <script src="/Scripts/progressbar.js"></script>
     <script>
-        document.getElementById('btnBack').onclick = function(e) {
+        document.getElementById('btnBack').onclick = function (e) {
             e.preventDefault();
-            window.location.href = 'UploadAd.html';
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = 'UploadAd.html'; // Replace with the actual previous page URL
+            }, 500); // Match the duration of the fade-out animation
         };
-        document.querySelector('.summary-request').onclick = function() {
-            window.location.href = 'ReceiveEstimates.html';
+
+        document.querySelector('.summary-request').onclick = function () {
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = 'ReceiveEstimates.html'; // Replace with the actual next page URL
+            }, 500); // Match the duration of the fade-out animation
         };
     </script>
 </body>
