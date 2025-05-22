@@ -437,21 +437,19 @@ button:hover {
     width: 434px;
     height: 284px;
     top: 25%;
-    left: 250px;
+    left: 0;
     background: url(/Assets/images/ReceiveEstimates/Fish.svg) no-repeat center;
     background-size: cover;
-    transform: translate(0, 100%);
-    animation: moveHorizontal 3s linear infinite;
+    animation: moveRight 5s linear infinite;
 }
 
-/* Animation for .moving_fish */
-@keyframes moveHorizontal {
+/* Animatie van links naar rechts + gespiegeld */
+@keyframes moveRight {
     0% {
-        transform: translateX(25%);
+        transform: translateX(-500px) scaleX(-1); /* start buiten links */
     }
-
     100% {
-        transform: translateX(-60%);
+        transform: translateX(450px) scaleX(-1); /* eind rechts buiten scherm */
     }
 }
 
