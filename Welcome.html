@@ -55,6 +55,11 @@
         window.location.href = 'selectDate.html';
       }, 500);
     });
+
+    //reset local storage
+    localStorage.removeItem('selectedMovies');
+    localStorage.removeItem('selectedLocations');
+    localStorage.removeItem('selectedWeek');
   </script>
 </body>
 
