@@ -96,6 +96,8 @@
     if (week && week.start && week.end && week.month) {
         document.getElementById('summary-week').textContent =
     `   ${week.start} ${week.month} until ${week.end} ${week.month}`;
+    } else {
+        document.getElementById('summary-week').textContent = "No week selected";
     }
 
     document.querySelector('.summary-request').onclick = function () {
@@ -110,6 +112,9 @@
     const container = document.getElementById('summary-locations');
         if (container && locations.length) {
             container.innerHTML = locations.map(loc => `<li>${loc}</li>`).join('');
+        }
+        else {
+            container.textContent = "No locations selected";
         }
 
     document.addEventListener("DOMContentLoaded", function() {
