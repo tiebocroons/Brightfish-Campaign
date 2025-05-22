@@ -105,6 +105,23 @@ html, body {
     display: flex;
     gap: 32px;
     margin-bottom: 0.5rem;
+    align-items: flex-end;
+    overflow-x: auto;      /* Enable horizontal scroll */
+    overflow-y: hidden;    /* Hide vertical scroll */
+    white-space: nowrap;   /* Prevent wrapping */
+    padding-bottom: 8px;   /* Optional: space for scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #bbb #eee; /* For Firefox */
+}
+
+/* Optional: Style scrollbar for Webkit browsers */
+.movie-poster-row::-webkit-scrollbar {
+    height: 8px;
+    background: #eee;
+}
+.movie-poster-row::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
 }
 
 .movie-poster {
@@ -387,9 +404,26 @@ html, body {
 
 .movie-poster-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 0.5rem;
     align-items: flex-end;
+    overflow-x: auto;      /* Enable horizontal scroll */
+    overflow-y: hidden;    /* Hide vertical scroll */
+    white-space: nowrap;   /* Prevent wrapping */
+    padding-bottom: 8px;   /* Optional: space for scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #bbb #eee; /* For Firefox */
+}
+
+/* Optional: Style scrollbar for Webkit browsers */
+.movie-poster-row::-webkit-scrollbar {
+    height: 8px;
+    background: #eee;
+}
+.movie-poster-row::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
 }
 
 .movie-summary {
