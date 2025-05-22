@@ -518,14 +518,14 @@ button:hover {
 }
 
 .fade-out {
-    animation: fadeOut 0.5s forwards;
+  animation: fadeOut 0.5s forwards;
 }
 
 @keyframes fadeOut {
-    to {
-        opacity: 0;
-        pointer-events: none;
-    }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 768px) {
