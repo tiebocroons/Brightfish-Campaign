@@ -158,3 +158,15 @@ button {
   99% { transform: translate(979.1px, 718.3px) rotate(88.2deg); opacity: 0.05; }
   100% { transform: translate(990.0px, 750.0px) rotate(90.0deg); opacity: 0.0; }
 }
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
