@@ -20,7 +20,6 @@ h1 {
 p {
   font-size: 14px;
   margin-top: 8px;
-  color: #555;
 }
 
 .calendar {
@@ -91,9 +90,8 @@ h1 {
 }
 
 p {
-  color: #666;
-  font-weight: 300;
   margin-bottom: 0.5rem;
+  color: #1e1e1c;
 }
 
 .calendar {
