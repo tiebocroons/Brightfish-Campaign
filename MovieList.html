@@ -329,7 +329,51 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = 'UploadAd.html';
         }, 500);
     });
+
+   // Helper: get movie name from element
+function getMovieNameFromElement(el) {
+    return el.querySelector('span') ? el.querySelector('span').textContent.trim() : null;
+}
+
+// On page load, mark already selected movies
+let selectedMovies = JSON.parse(localStorage.getItem('selectedMovies')) || [];
+document.querySelectorAll('.movie-selectable').forEach(el => {
+    const movieName = getMovieNameFromElement(el);
+    if (movieName && selectedMovies.some(m => m.title === movieName)) {
+        el.classList.add('selected');
+    }
 });
+
+modalSelectBtn.onclick = () => {
+    if (lastClickedMovie) {
+        const movieName = getMovieNameFromElement(lastClickedMovie);
+        if (movieName && movieInfo[movieName]) {
+            // Get current selected movies from localStorage or start with empty array
+            let selectedMovies = JSON.parse(localStorage.getItem('selectedMovies')) || [];
+            // Check if movie is already selected
+            if (!selectedMovies.some(m => m.title === movieInfo[movieName].title)) {
+                selectedMovies.push({
+                    title: movieInfo[movieName].title,
+                    image: movieInfo[movieName].image.replace(/^<img\s+src="([^"]+)".*$/, '$1') // extract image path
+                });
+            }
+            // Save updated array back to localStorage
+            localStorage.setItem('selectedMovies', JSON.stringify(selectedMovies));
+            lastClickedMovie.classList.add('selected');
+        }
+    }
+    modal.style.display = 'none';
+    lastClickedMovie = null;
+};
+// On page load, mark already selected movies
+document.querySelectorAll('.movie-selectable').forEach(el => {
+    const movieName = getMovieNameFromElement(el);
+    if (movieName && selectedMovies.some(m => m.title === movieName)) {
+        el.classList.add('selected');
+    }
+});
+});
+
 </script>
 
 <script src="/Scripts/progressbar.js"></script>

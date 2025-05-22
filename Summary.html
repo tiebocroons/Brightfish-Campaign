@@ -34,16 +34,13 @@
                 <p class="summary-desc">Review the details of your cinema advertising campaign</p>
                 <div class="summary-block">
                     <div class="summary-movies-section">
-                        <h2 class="summary-movies-title">Selected Movies</h2>
+                    <h2 class="summary-movies-title">Selected Movies</h2>
                         <div class="movie-poster-row">
-                            <div class="movie-poster">
-                                <img src="Assets/images/Movies/patsersPoster.jpg" alt="Patsers poster">
-                            </div>
-                            <div class="movie-poster">
-                                <img src="Assets/images/Movies/thunderboltsPoster.jpg" alt="Thunderbolts poster">
-                            </div>
+                            <!-- Movie posters will be dynamically inserted here -->
                         </div>
                     </div>
+                    
+
                     <div class="summary-meta-row">
                         <div class="summary-meta">
                             <span class="summary-meta-label">Campaign Schedule</span>
@@ -88,19 +85,33 @@
     <script src="/Scripts/progressbar.js"></script>
     <script>
         document.getElementById('btnBack').onclick = function (e) {
-            e.preventDefault();
-            document.body.classList.add('fade-out');
-            setTimeout(function () {
-                window.location.href = 'UploadAd.html'; // Replace with the actual previous page URL
-            }, 500); // Match the duration of the fade-out animation
-        };
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+            window.location.href = 'UploadAd.html';
+        }, 500);
+    };
 
-        document.querySelector('.summary-request').onclick = function () {
-            document.body.classList.add('fade-out');
-            setTimeout(function () {
-                window.location.href = 'ReceiveEstimates.html'; // Replace with the actual next page URL
-            }, 500); // Match the duration of the fade-out animation
-        };
+    document.querySelector('.summary-request').onclick = function () {
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+            window.location.href = 'ReceiveEstimates.html';
+        }, 500);
+    };
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const movies = JSON.parse(localStorage.getItem('selectedMovies')) || [];
+        const container = document.querySelector('.movie-poster-row');
+        if (movies.length === 0) {
+            container.textContent = "No movies selected";
+        } else {
+            container.innerHTML = movies.map(movie => 
+                `<div class="movie-summary">
+                    <img src="${movie.image}" alt="${movie.title} poster" />
+                </div>`
+            ).join('');
+        }
+    });
     </script>
 </body>
 </html>
