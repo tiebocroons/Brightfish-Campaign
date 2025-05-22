@@ -47,16 +47,16 @@ button {
 .main-container {
     position: relative;
     width: 1280px;
-    height: auto;
+    height: 1000px;
     margin: 0 auto;
     background: #ffffff;
     overflow: hidden;
 }
 
 .section {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 1280px;
-    height: 178px;
     margin: 0 0 0 0;
     background: #ffffff;
     z-index: 75;
@@ -161,7 +161,7 @@ button {
 }
 
 .movies-scroll-area {
-    max-height: 60vh; /* Adjust as needed */
+    max-height: 70vh; /* Adjust as needed */
     overflow-y: auto;
     overflow-x: hidden;
     margin-top: 16px;
@@ -1056,7 +1056,7 @@ button {
     position: relative;
     width: 884px;
     height: 260px;
-    margin: 32px 0 15px 198px;
+    margin: 32px 0 0 198px;
     z-index: 28;
 }
 

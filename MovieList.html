@@ -275,17 +275,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll('.movie-selectable').forEach(el => {
         el.addEventListener('click', function (e) {
-           
-            if (this.classList.contains('selected')) {
-                this.classList.remove('selected');
-                return;
-            }
-
-           
             const movieName = this.querySelector('span') ? this.querySelector('span').textContent.trim() : null;
             if (!movieName || !movieInfo[movieName]) return;
 
-          
+            // If already selected, deselect and remove from localStorage
+            if (this.classList.contains('selected')) {
+                this.classList.remove('selected');
+                let selectedMovies = JSON.parse(localStorage.getItem('selectedMovies')) || [];
+                selectedMovies = selectedMovies.filter(m => m.title !== movieInfo[movieName].title);
+                localStorage.setItem('selectedMovies', JSON.stringify(selectedMovies));
+                return;
+            }
+
+            // Show modal for selection
             modalTitle.textContent = movieInfo[movieName].title;
             modalDescription.textContent = movieInfo[movieName].description;
             modalImage.innerHTML = movieInfo[movieName].image;
