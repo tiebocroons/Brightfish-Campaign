@@ -89,6 +89,7 @@ section {
   border: 2px solid #d43b3b;
 }
 
+
 @media (max-width: 768px) {
   .main-container {
     padding: 0 20px;

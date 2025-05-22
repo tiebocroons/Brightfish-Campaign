@@ -214,6 +214,13 @@ p {
   border-color: #dc393c;
 }
 
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 768px) {
   /* Body */
   body {
