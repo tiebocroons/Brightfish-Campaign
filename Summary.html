@@ -48,7 +48,7 @@
                         </div>
                         <div class="summary-meta">
                             <span class="summary-meta-label">Location(s)</span>
-                            <span class="summary-meta-value">Kinepolis Antwerp, Kinepolis Ghent</span>
+                            <ul id="summary-locations"></ul>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,13 @@
             window.location.href = 'ReceiveEstimates.html';
         }, 500);
     };
+
+    // Place this where you want to show the locations
+    const locations = JSON.parse(localStorage.getItem('selectedLocations') || '[]');
+    const container = document.getElementById('summary-locations');
+        if (container && locations.length) {
+            container.innerHTML = locations.map(loc => `<li>${loc}</li>`).join('');
+        }
 
     document.addEventListener("DOMContentLoaded", function() {
         const movies = JSON.parse(localStorage.getItem('selectedMovies')) || [];
