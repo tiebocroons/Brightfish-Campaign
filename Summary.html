@@ -44,7 +44,7 @@
                     <div class="summary-meta-row">
                         <div class="summary-meta">
                             <span class="summary-meta-label">Campaign Schedule</span>
-                            <span class="summary-meta-value">13-05-2025 until 19-05-2025</span>
+                            <span class="summary-meta-value" id="summary-week"></span>
                         </div>
                         <div class="summary-meta">
                             <span class="summary-meta-label">Location(s)</span>
@@ -91,6 +91,12 @@
             window.location.href = 'UploadAd.html';
         }, 500);
     };
+
+    const week = JSON.parse(localStorage.getItem('selectedWeek'));
+    if (week && week.start && week.end && week.month) {
+        document.getElementById('summary-week').textContent =
+    `   ${week.start} ${week.month} until ${week.end} ${week.month}`;
+    }
 
     document.querySelector('.summary-request').onclick = function () {
         document.body.classList.add('fade-out');

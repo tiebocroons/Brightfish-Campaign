@@ -130,27 +130,43 @@
       }
   
       function addDayClickEvents() {
-        const days = calendarGrid.querySelectorAll(".day");
-  
-        days.forEach((day, index) => {
-          day.addEventListener("click", () => {
-            if (day.classList.contains("disabled")) return;
-  
-            const dayOfWeek = index % 7;
-            const wednesdayIndex = index - (dayOfWeek - 2 < 0 ? dayOfWeek + 5 : dayOfWeek - 2);
-  
-            days.forEach(d => d.classList.remove("selected"));
-  
-            for (let i = 0; i < 7; i++) {
-              const selectIndex = wednesdayIndex + i;
-              const selectDay = days[selectIndex];
-              if (selectDay && !selectDay.classList.contains("disabled")) {
-                selectDay.classList.add("selected");
-              }
-            }
-          });
-        });
+  const days = calendarGrid.querySelectorAll(".day");
+
+  days.forEach((day, index) => {
+    day.addEventListener("click", () => {
+      if (day.classList.contains("disabled")) return;
+
+      const dayOfWeek = index % 7;
+      const wednesdayIndex = index - (dayOfWeek - 2 < 0 ? dayOfWeek + 5 : dayOfWeek - 2);
+
+      days.forEach(d => d.classList.remove("selected"));
+
+      let weekDates = [];
+      for (let i = 0; i < 7; i++) {
+        const selectIndex = wednesdayIndex + i;
+        const selectDay = days[selectIndex];
+        if (selectDay && !selectDay.classList.contains("disabled")) {
+          selectDay.classList.add("selected");
+          weekDates.push(selectDay.textContent);
+        }
       }
+
+      // Save selected week to localStorage
+      const monthName = calendarMonth.textContent;
+      // weekDates[0] is Wednesday, weekDates[6] is Tuesday
+      if (weekDates.length === 7) {
+        localStorage.setItem(
+          "selectedWeek",
+          JSON.stringify({
+            month: monthName,
+            start: weekDates[0],
+            end: weekDates[6]
+          })
+        );
+      }
+    });
+  });
+}
   
       document.getElementById("next-month").addEventListener("click", () => {
         if (currentMonthIndex < monthOrder.length - 1) {
