@@ -7,6 +7,9 @@
 
 .main-container {
     overflow-y: auto;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
 }
 
 .main-container,
@@ -316,6 +319,7 @@ button {
     border: 1px solid #b3b3b3;
     z-index: 6;
     border-radius: 12px;
+    padding-left: 15px;
 }
 
 .text-a {
@@ -342,6 +346,8 @@ button {
     border: 1px solid #b3b3b3;
     z-index: 11;
     border-radius: 12px;
+    padding-left: 15px;
+
 }
 
 .text-b {
@@ -368,6 +374,9 @@ button {
     border: 1px solid #b3b3b3;
     z-index: 12;
     border-radius: 12px;
+    padding-left: 15px;
+    padding-top: 15px;
+
 }
 
 .Button-send {
@@ -416,13 +425,13 @@ button:hover {
 
 .text-d {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: left;
+    justify-content: left;
     position: absolute;
     width: 504px;
     height: 31px;
     top: 525px;
-    left: 74px;
+    left: 41px;
     color: #000000;
     font-family: Lato, var(--default-font-family);
     font-size: 14px;
