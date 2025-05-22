@@ -16,11 +16,18 @@ body {
 }
 
 .main-container {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   font-family: 'Days One', sans-serif;
+}
+.subheadline {
+  font-family: 'lato', sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin-top: 20px;
+  color: #333;
 }
 section {
   display: flex;
@@ -51,6 +58,7 @@ section {
 .benefit {
   font-family: 'Days One', sans-serif;
   font-size: 24px;
+  font-weight: lighter;
   margin: 10px 0 5px;
 }
 
@@ -75,7 +83,7 @@ section {
   font-size: 20px;
   text-decoration: none;
   position: absolute;
-  bottom: 50px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease;
