@@ -383,7 +383,7 @@ button {
     background: #f3f3f2;
     z-index: 2;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-5 {
@@ -424,7 +424,7 @@ button {
     background: #f3f3f2;
     z-index: 45;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-6 {
@@ -465,7 +465,7 @@ button {
     background: #f3f3f2;
     z-index: 53;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-4 {
@@ -506,7 +506,7 @@ button {
     background: #f3f3f2;
     z-index: 61;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-7 {
@@ -569,7 +569,7 @@ button {
     background: #f3f3f2;
     z-index: 6;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-6 {
@@ -609,7 +609,7 @@ button {
     background: #f3f3f2;
     z-index: 49;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-7 {
@@ -649,7 +649,7 @@ button {
     background: #f3f3f2;
     z-index: 57;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-8 {
@@ -689,7 +689,7 @@ button {
     background: #f3f3f2;
     z-index: 65;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-8 {
@@ -894,7 +894,7 @@ button {
     background: #f3f3f2;
     z-index: 41;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-9 {
@@ -935,7 +935,7 @@ button {
     background: #f3f3f2;
     z-index: 10;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-9 {
@@ -976,7 +976,7 @@ button {
     background: #f3f3f2;
     z-index: 33;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-a {
@@ -1017,7 +1017,7 @@ button {
     background: #f3f3f2;
     z-index: 37;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-b {
@@ -1068,7 +1068,7 @@ button {
     background: #f3f3f2;
     z-index: 14;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-c {
@@ -1108,7 +1108,7 @@ button {
     background: #f3f3f2;
     z-index: 18;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-a {
@@ -1160,7 +1160,7 @@ button {
     background: #f3f3f2;
     z-index: 23;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .img-b {
@@ -1216,7 +1216,7 @@ button {
 .movie-selectable:active {
     border: 2.5px solid #E94B4B;
     background: #fff4f4;
-    box-shadow: 0 2px 12px rgba(233,75,75,0.08);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 .movie-selectable:hover {
     border: 2px solid #E94B4B;
@@ -1310,10 +1310,10 @@ button {
     position: relative;
     width: 197px;
     height: 260px;
-    background: #f3f3f2;
+    background: #ffffff;
     z-index: 28;
     border-radius: 10px;
-    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 
 .pic-e {

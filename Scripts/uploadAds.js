@@ -85,3 +85,42 @@ const tabAd = document.getElementById('tab-ad');
                 window.location.href = 'Summary.html'; // Replace with the actual next page URL
             }, 500); // Match the duration of the fade-out animation
         });
+
+        // Image preview for "Generate ad from images"
+document.getElementById('images-file-input').addEventListener('change', function(e) {
+    const preview = document.getElementById('images-preview');
+    preview.innerHTML = '';
+    Array.from(e.target.files).forEach(file => {
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                const img = document.createElement('img');
+                img.src = evt.target.result;
+                img.style.maxWidth = '120px';
+                img.style.maxHeight = '80px';
+                img.style.margin = '6px';
+                img.style.borderRadius = '8px';
+                preview.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+});
+
+// Video preview for "Upload existing ad"
+document.getElementById('ad-file-input').addEventListener('change', function(e) {
+    const preview = document.getElementById('ad-preview');
+    preview.innerHTML = '';
+    const file = e.target.files[0];
+    if (file && file.type === 'video/quicktime') {
+        const url = URL.createObjectURL(file);
+        const video = document.createElement('video');
+        video.src = url;
+        video.controls = true;
+        video.style.maxWidth = '220px';
+        video.style.maxHeight = '120px';
+        video.style.margin = '6px';
+        video.style.borderRadius = '8px';
+        preview.appendChild(video);
+    }
+});

@@ -145,6 +145,7 @@ body {
             font-weight: 600;
             cursor: pointer;
             transition: background 0.2s;
+            margin-bottom: 20px;
         }
         .select-files-btn:hover {
             background: #b32c2e;
